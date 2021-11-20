@@ -35,7 +35,7 @@ const quests = [
     {
         id:4,
         question: "Aklimdan burda gecen ne olabilir?",
-        img:"qPics/aklimdanGecenNe.jpg",
+        img:"qPics/aklimdangecenne.jpg",
         answers: [
             {value: 3, option: "Uff gunes batsa da gitsek!!"},
             {value: 6, option: "Ne kadar sansli bi kiz ya"},
@@ -46,7 +46,7 @@ const quests = [
     {
         id:5,
         question: "Burda evet dendi okey, tamam ama tekrar sorsalar cevabin ne olurdu?",
-        img:"qPics/sizceCevapNe.JPG",
+        img:"qPics/sizcecevapne.JPG",
         answers: [
             {value: 7, option: "Evet!"},
             {value: 3, option: "Yok almayim!"},

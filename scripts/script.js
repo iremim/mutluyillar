@@ -128,9 +128,9 @@ nextButton.addEventListener("click", ()=>{
             Neyse bugun dogum gunun oldugu icin
             yine de dile benden ne dilersen <i class='far fa-kiss-wink-heart' style='font-size:20px;color:red'></i></p>
 
-            <div id="resultDiv" style="display: flex;justify-content: space-around;margin-top: 30px; align-items:center;">
+            <div id="resultDiv" style="display: flex;justify-content: space-between;margin-top: 30px; align-items:center;">
                 <a href="ayear.php" style="text-decoration: none;color: black;display: flex;flex-direction: column; align-items:center;justify-content: center;">
-                <i class='fas fa-file-image' style='font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
+                <i class='fas fa-file-image' style='color:red; font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
                 <div id="startAgain" onclick="newGameStarter()" style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><i style='font-size:24px;color:red' class='fas fa-gamepad'></i>
                     <p style="font-weight: bold;margin: 0;margin-top: 7px;">Yeni Oyun!</p></div>
                 </div>
@@ -153,10 +153,10 @@ nextButton.addEventListener("click", ()=>{
             <p>Toplam poanin <span style="text-weight:bold; color:green">${totalPoan}</span>. Kazandigin icin 
             dile benden ne dilersen <i class='far fa-kiss-wink-heart' style='font-size:20px;color:green'></i></p>
 
-            <div id="resultDiv" style="display: flex;justify-content: space-around;margin-top: 30px;">
+            <div id="resultDiv" style="display: flex;justify-content: space-between;margin-top: 30px;">
                 <a href="ayear.php" style="text-decoration: none;color: black;display: flex;flex-direction: column; align-items:center;justify-content: center;">
-                <i class='fas fa-file-image' style='font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
-                <div id="startAgain" onclick="newGameStarter()" style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><i style='font-size:36px;color:black' class='fas fa-gamepad'></i>
+                <i class='fas fa-file-image' style='color:green; font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
+                <div id="startAgain" onclick="newGameStarter()" style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><i style='font-size:36px;color:green' class='fas fa-gamepad'></i>
                     <p style="font-weight: bold;margin: 0;margin-top: 7px;">Yeni Oyun!</p></div>
                 </div>
             </div>

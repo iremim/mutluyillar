@@ -234,8 +234,8 @@ body{
 		top: 50;
 	}
 	.navigateButtons button {
-		height: 30px;
-		width: 30px;
+		min-height: 30px;
+		min-width: 30px;
 		left: 45%;
 		top: 7%;
 	}
