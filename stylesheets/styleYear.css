@@ -1,0 +1,187 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../backgroundPics/mutluyillar.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+	height: 100vh;
+	width: 90vw;
+    position: relative;
+    overflow-y: scroll;
+}
+
+#title{
+    text-align: center;
+    color: white;
+}
+
+#fotoPlace {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 20px;
+    position: relative;
+    margin-top: -7px;
+}
+.mainBox {
+	display: flex;
+	align-items: center;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+}
+.imgBox {
+	position: relative;
+	height: 35vh;
+	overflow: hidden;
+	border: 1px solid honeydew;
+	border-radius: 20px;
+}
+.img{
+    width: 100%;
+    position: relative;
+}
+.imgFlip{
+    width: 100%;
+    position: relative;
+}
+.underText {
+	position: absolute;
+	color: white;
+	bottom: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+.changeButton {
+	position: absolute;
+	top: 5%;
+    left: 7%;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: honeydew;
+}
+.w3-jumbo {
+	font-size: 20px !important;
+}
+.w3-spin {
+	animation: w3-spin 7s infinite linear;
+}
+
+.bigger {
+	width: 55vw;
+    left: 35%;
+}
+.big {
+	height: 95vh;
+	position: absolute;
+	top: -55%;
+    transition: all 1s;
+}
+.moreFrontier{
+	position: relative;
+	z-index: 22;
+	top: 57vh;
+	font-size: 30px;
+}
+.hide{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-image: url("../backgroundPics/newYear.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    main {
+        height: 100vh;
+        width: 90vw;
+        position: relative;
+        overflow-y: scroll;
+    }
+    
+    #title{
+        text-align: center;
+        color: white;
+    }
+    
+    #fotoPlace {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        position: relative;
+    }
+    .mainBox {
+        display: flex;
+        align-items: center;
+        position: relative;
+    
+        flex-direction: column;
+    }
+    .imgBox {
+        position: relative;
+        height: 25vh;
+        overflow: hidden;
+        border: 1px solid honeydew;
+        border-radius: 20px;
+    }
+    .img{
+        width: 100%;
+        position: relative;
+    }
+    .imgFlip{
+        width: 100%;
+        position: relative;
+    }
+    .underText {
+        position: absolute;
+        color: white;
+        bottom: 0;
+        font-family: 'Kaushan Script', cursive;
+    }
+    .changeButton {
+        position: absolute;
+        top: 5%;
+        left: 7%;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: honeydew;
+    }
+    .w3-jumbo {
+        font-size: 20px !important;
+    }
+    .w3-spin {
+        animation: w3-spin 7s infinite linear;
+    }
+    div.bigger {
+        width: 90vw;
+        left: 0;
+    }
+    div.big{
+        height: 55vh;
+        position: absolute;
+        top: 0;
+    }
+    .moreFrontier{
+        position: relative;
+        z-index: 22;
+        top: 57vh;
+        font-size: 30px;
+    }
+    .hide{
+        display: none;
+    }
+    
+}
