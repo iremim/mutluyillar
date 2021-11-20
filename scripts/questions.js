@@ -2,7 +2,7 @@ const quests = [
     {
         id:1,
         question: "Bu resimdeki cirkini ne kadar seviyorum sence?",
-        img:"qPics/buCirkiniNeKadar.jpg",
+        img:"qPics/buCirkiniNeKadar.JPG",
         answers: [
             {value: 1, option: "Eh iste"},
             {value: 4, option: "Kucak dolusu"},
@@ -13,7 +13,7 @@ const quests = [
     {
         id:2,
         question: "Burda ki mutluluga bi rakam versen, bu kac olurdu?",
-        img:"qPics/BurdakiMutlulugunDegeri.jpg",
+        img:"qPics/BurdakiMutlulugunDegeri.JPG",
         answers: [
             {value: 6, option: "Huh, bu da mutluluk mu?!"},
             {value: 10, option: "Hala o anin etkisindeyim"},
@@ -35,7 +35,7 @@ const quests = [
     {
         id:4,
         question: "Aklimdan burda gecen ne olabilir?",
-        img:"qPics/aklimdanGecenNe.jpg",
+        img:"qPics/aklimdanGecenNe.JPG",
         answers: [
             {value: 3, option: "Uff gunes batsa da gitsek!!"},
             {value: 6, option: "Ne kadar sansli bi kiz ya"},
@@ -46,7 +46,7 @@ const quests = [
     {
         id:5,
         question: "Burda evet dendi okey, tamam ama tekrar sorsalar cevabin ne olurdu?",
-        img:"qPics/sizceCevapNe.jpg",
+        img:"qPics/sizceCevapNe.JPG",
         answers: [
             {value: 7, option: "Evet!"},
             {value: 3, option: "Yok almayim!"},
@@ -112,7 +112,7 @@ const quests = [
     {
         id:11,
         question: "Sence konusulan konu ne? (Altin soru)",
-        img:"qPics/bonus.jpg",
+        img:"qPics/bonus.JPG",
         answers: [
             {value: 15, option: "Amcanin `Kama` meyve bicagi"},
             {value: 14, option: "Amcanin balkonu"},

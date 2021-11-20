@@ -1,8 +1,5 @@
 "use strict";
 
-localStorage.setItem("fotolar", JSON.stringify(pics));
-const pictures = JSON.parse(localStorage.getItem("fotolar"));
-
 let fotoPlace = document.querySelector("#fotoPlace");
 
 function createPics(picture){

@@ -41,8 +41,9 @@
                     </div>
         </div>
     </div>
-    
 <script src="scripts/questions.js"></script>
+<script src="scripts/pictures.js"></script>
+<script src="scripts/storeDatas.js"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>
