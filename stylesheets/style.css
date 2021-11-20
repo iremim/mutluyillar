@@ -8,6 +8,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
     height: 100vh;
+	width: 100vw
 };
 
 #aYear {
@@ -154,6 +155,8 @@ body{
 	align-items: center;
 	padding: 3px;
 	border-radius: 10px;
+
+	font-family: 'Kaushan Script', cursive;
 }
 .selectedOpt {
 	background-color: black;
@@ -167,7 +170,7 @@ body{
 	right: 20;
 }
 
-.navigateButtons s button {
+.navigateButtons > button {
 	background-color: black;
 	color: lightskyblue;
 	font-size: 20px;
@@ -201,7 +204,7 @@ body{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
-		height: 78vh;
+		height: 92vh;
 		align-items: center;
 	}
 	.questionsContainer {
@@ -219,7 +222,7 @@ body{
 	.navigateButtons {
 		position: relative;
 		bottom: 110;
-		right: 20;
+		right: 25;
 	}
 	body{
 		align-items: flex-start;
@@ -232,7 +235,7 @@ body{
 	}
 	.playG {
 		width: 85vw;
-		max-height: 90vh;
+		max-height: 92vh;
 		overflow-y: scroll;
 		overflow-x: hidden;
 		position: relative;
@@ -251,6 +254,12 @@ body{
 	}
 	#pictureContainer > img {   
 		width: 100%;
+	}
+	.questionsContainer > div:first-child {
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		text-align: center;
 	}
   }
 

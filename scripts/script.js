@@ -128,7 +128,7 @@ nextButton.addEventListener("click", ()=>{
             Neyse bugun dogum gunun oldugu icin
             yine de dile benden ne dilersen <i class='far fa-kiss-wink-heart' style='font-size:20px;color:red'></i></p>
 
-            <div id="resultDiv" style="display: flex;justify-content: space-between;">
+            <div id="resultDiv" style="display: flex;justify-content: space-between; margin-top:20px;">
                 <a href="ayear.php" style="text-decoration: none;color: red;display: flex;flex-direction: column; align-items:center;justify-content: center;">
                 <i class='fas fa-file-image' style='color:black; font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
                 <div id="startAgain" onclick="newGameStarter()" style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><i style='font-size:24px;color:black' class='fas fa-gamepad'></i>
@@ -153,7 +153,7 @@ nextButton.addEventListener("click", ()=>{
             <p style="margin: 0;">Toplam poanin <span style="text-weight:bold; color:green">${totalPoan}</span>. Kazandigin icin 
             dile benden ne dilersen <i class='far fa-kiss-wink-heart' style='font-size:20px;color:green'></i></p>
 
-            <div id="resultDiv" style="display: flex;justify-content: space-between;">
+            <div id="resultDiv" style="display: flex;justify-content: space-between; margin-top:20px;">
                 <a href="ayear.php" style="text-decoration: none;color: green;display: flex;flex-direction: column; align-items:center;justify-content: center;">
                 <i class='fas fa-file-image' style='color:black; font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
                 <div id="startAgain" onclick="newGameStarter()" style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><i style='font-size:36px;color:black' class='fas fa-gamepad'></i>
