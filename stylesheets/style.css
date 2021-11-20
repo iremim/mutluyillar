@@ -38,9 +38,7 @@ body{
 	background-color: aliceblue;
 
 	text-align: center;
-	margin-bottom: 12px;
-
-	height: 36vw;
+	margin-bottom: 17px;
 }
 
 #playGround h2 {
@@ -83,12 +81,12 @@ body{
 	display: none;
 }
 
-  .container {
+.container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
 
+	height: 78vh;
 	width: 90vw;
 
 	transition: width 1s ease-in;
@@ -97,6 +95,9 @@ body{
 #pictureContainer {   
     width: 40%;
     position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #pictureContainer > img {   
 	max-width: 94%;
@@ -113,6 +114,7 @@ body{
 	border-radius: 2rem;
 	gap: 20px;
 	max-width: 50vw;
+	height: 50vh;
 }
 
 /* question  */
@@ -158,34 +160,26 @@ body{
 	font-weight: bold;
 }
 
-/* next question button */
-.navigateButtons{
-    flex-basis: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 80%;
+.navigateButtons {
 	position: relative;
+	bottom: 120;
+	right: 20;
 }
 
-.navigateButtons button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	appearance: none;
-	border: none;
+.navigateButtons > button {
 	background-color: black;
 	color: lightskyblue;
 	font-size: 20px;
 	border-radius: 100%;
-	position: relative;
+	position: absolute;
 
-	left: 50%;
 	height: 50px;
 	width: 40px;
-	top: 10%;
 
-	animation: 5s ease 0s infinite beatRight;
+	justify-content: center;
+	align-items: center;
+
+	animation: 5s ease-in 0s infinite beatRight;
 }
 
 #start:active {background-color: aliceblue}
@@ -202,11 +196,12 @@ body{
 		50% { left: 46%; }
 		100% { left: 44%; }
 	}
-
 	.container {
 		display: flex;
 		flex-direction: column;
-
+		justify-content: space-evenly;
+		height: 80vh;
+		align-items: center;
 	}
 	.questionsContainer {
 		max-width: 90%;
@@ -216,14 +211,13 @@ body{
 		position: relative;
 		gap: 10px;
 		margin-top: 10px;
+		height: 25vh;
 	}
 
 	.navigateButtons {
-		flex-basis: 10%;
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
-		width: 95%;
+		position: relative;
+		bottom: 110;
+		right: 20;
 	}
 	body{
 		align-items: flex-start;
@@ -231,6 +225,8 @@ body{
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 100vh;
+
+		overflow: hidden;
 	}
 	.playG {
 		width: 85vw;
@@ -238,19 +234,19 @@ body{
 		overflow-y: scroll;
 		overflow-x: hidden;
 		position: relative;
-		top: 50;
-		min-height: 69vh;
+		top: 30;
 	}
 	.navigateButtons button {
-		height: 40px;
-		width: 30px;
-		left: 45%;
-		top: 9%;
+		position: absolute;
+		height: 50px;
+		width: 40px;
 	}
 	#pictureContainer {   
-		width: 70%;
+		width: 95%;
 		position: relative;
-		max-width: 70%;
+	}
+	#pictureContainer > img {   
+		width: 100%;
 	}
   }
 

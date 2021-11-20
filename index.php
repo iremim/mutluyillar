@@ -16,8 +16,8 @@
     <title>Birlikte Nice Senelere</title>
 </head>
 <body>
-    <a href="ayear.php" id="aYear"><i class="material-icons" style="font-size:24px;position: absolute;color: white;top: 1.2vh; left: 0.6vw;">collections</i></a>
-    <a href="addPic.php" id="addPic"><i class="fa fa-plus" style="z-index: 20; font-size:24px;position: absolute;color: white;top: 0.8vh; right: 1.5vw;"></i></a>
+    <a href="ayear.php" id="aYear"><i class="material-icons" style="font-size:24px;position: absolute;color: white;top: 0.5vh; left: 1vw;">collections</i></a>
+    <a href="addPic.php" id="addPic"><i class="fa fa-plus" style="z-index: 20; font-size:24px;position: absolute;color: white;top: 0.5vh; right: 1vw;"></i></a>
 
     <div id="playGround" class="playArea playG">
         <div id="firstDiv" style="color: black; position: relative;">

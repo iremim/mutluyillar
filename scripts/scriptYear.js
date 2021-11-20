@@ -66,6 +66,8 @@ function createPics(picture){
 
         imgBox.addEventListener("click", (e)=>{
 
+            window.scrollTo();
+
             let allBoxes = document.querySelectorAll(".mainBox");
 
             allBoxes.forEach(e => {
