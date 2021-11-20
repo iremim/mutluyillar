@@ -1,5 +1,7 @@
 "use strict";
 
+console.log(questions);
+
 let playground = document.querySelector("#playGround");
 let start = document.querySelector("#start");
 
@@ -110,7 +112,7 @@ nextButton.addEventListener("click", ()=>{
             nextButton.style.display ="none";
             
             pictureContainer.innerHTML =`
-                <img src="../qPics/kaybettin.png">
+                <img src="qPics/kaybettin.png">
             `;
         
             questionField.innerHTML =`
@@ -126,7 +128,7 @@ nextButton.addEventListener("click", ()=>{
             yine de dile benden ne dilersen <i class='far fa-kiss-wink-heart' style='font-size:20px;color:red'></i></p>
 
             <div id="resultDiv" style="display: flex;justify-content: space-around;margin-top: 30px; align-items:center;">
-                <a href="../Pages/ayear.html" style="text-decoration: none;color: black;display: flex;flex-direction: column; align-items:center;justify-content: center;">
+                <a href="ayear.php" style="text-decoration: none;color: black;display: flex;flex-direction: column; align-items:center;justify-content: center;">
                 <i class='fas fa-file-image' style='font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
                 <div id="startAgain" onclick="newGameStarter()" style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><i style='font-size:24px;color:red' class='fas fa-gamepad'></i>
                     <p style="font-weight: bold;margin: 0;margin-top: 7px;">Yeni Oyun!</p></div>
@@ -137,7 +139,7 @@ nextButton.addEventListener("click", ()=>{
             nextButton.style.display ="none";
     
             pictureContainer.innerHTML =`
-            <img src="../qPics/tebrikler.jpeg">
+            <img src="qPics/tebrikler.jpeg">
             `;
     
             document.querySelector(".question").innerHTML = `
@@ -151,7 +153,7 @@ nextButton.addEventListener("click", ()=>{
             dile benden ne dilersen <i class='far fa-kiss-wink-heart' style='font-size:20px;color:green'></i></p>
 
             <div id="resultDiv" style="display: flex;justify-content: space-around;margin-top: 30px;">
-                <a href="../Pages/ayear.html" style="text-decoration: none;color: black;display: flex;flex-direction: column; align-items:center;justify-content: center;">
+                <a href="ayear.php" style="text-decoration: none;color: black;display: flex;flex-direction: column; align-items:center;justify-content: center;">
                 <i class='fas fa-file-image' style='font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
                 <div id="startAgain" onclick="newGameStarter()" style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><i style='font-size:36px;color:black' class='fas fa-gamepad'></i>
                     <p style="font-weight: bold;margin: 0;margin-top: 7px;">Yeni Oyun!</p></div>

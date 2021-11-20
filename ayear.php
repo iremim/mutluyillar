@@ -12,7 +12,8 @@
     <title>Koca bir senemiz</title>
 </head>
 <body>
-    <a href="index.html" id="aYear"><i class="fa fa-home" style="z-index: 20; font-size:24px;position: absolute;color: white;top: 0.8vh; left: 1.5vw;"></i></a>
+    <a href="index.php" id="aYear"><i class="fa fa-home" style="z-index: 20; font-size:24px;position: absolute;color: white;top: 0.8vh; left: 1.5vw;"></i></a>
+    <a href="addPic.php" id="addPic"><i class="fa fa-plus" style="z-index: 20; font-size:24px;position: absolute;color: white;top: 0.8vh; right: 1.5vw;"></i></a>
     <main>
         <div id="title">
             <h1 style="font-family: 'Cuprum', sans-serif;">Nice Guzel Yillara</h1>
