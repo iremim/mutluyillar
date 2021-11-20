@@ -130,7 +130,7 @@ nextButton.addEventListener("click", ()=>{
 
             <div id="resultDiv" style="display: flex;justify-content: space-between;margin-top: 30px; align-items:center;">
                 <a href="ayear.php" style="text-decoration: none;color: red;display: flex;flex-direction: column; align-items:center;justify-content: center;">
-                <i class='fas fa-file-image' style='color:red; font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
+                <i class='fas fa-file-image' style='color:black; font-size:36px'></i><p style="font-weight: bold;margin: 0;margin-top: 7px;">Fotos of us</p></a>
                 <div id="startAgain" onclick="newGameStarter()" style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><i style='font-size:24px;color:black' class='fas fa-gamepad'></i>
                     <p style="color:red; font-weight: bold;margin: 0;margin-top: 7px;">Yeni Oyun!</p></div>
                 </div>

@@ -42,6 +42,8 @@ function createPics(picture){
 
     imgBox.addEventListener("click", (event)=>{
      
+        console.log(event);
+
         let chosenID = event.target.parentElement.parentElement.id;
 
         let chosenParentsImgBox = event.target.parentElement;

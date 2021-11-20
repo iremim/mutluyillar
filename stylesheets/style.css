@@ -39,6 +39,8 @@ body{
 
 	text-align: center;
 	margin-bottom: 12px;
+
+	height: 36vw;
 }
 
 #playGround h2 {
@@ -177,7 +179,12 @@ body{
 	font-size: 20px;
 	border-radius: 100%;
 	position: relative;
+
 	left: 50%;
+	height: 50px;
+	width: 40px;
+	top: 10%;
+
 	animation: 5s ease 0s infinite beatRight;
 }
 
@@ -232,12 +239,13 @@ body{
 		overflow-x: hidden;
 		position: relative;
 		top: 50;
+		min-height: 69vh;
 	}
 	.navigateButtons button {
 		height: 40px;
 		width: 30px;
 		left: 45%;
-		top: 7%;
+		top: 9%;
 	}
 	#pictureContainer {   
 		width: 70%;
