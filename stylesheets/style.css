@@ -169,8 +169,6 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 40px;
-	width: 40px;
 	appearance: none;
 	border: none;
 	background-color: black;
@@ -236,9 +234,9 @@ body{
 		top: 50;
 	}
 	.navigateButtons button {
-		height: 30px;
-		width: 30px;
-		left: 48%;
+		height: 20px;
+		width: 20px;
+		left: 40%;
 	}
 	#pictureContainer {   
 		width: 70%;

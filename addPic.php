@@ -23,7 +23,7 @@
         </div>
     </main>
 
-    <script src="scripts/storeDatas.js"></script>
+    <script src="scripts/pictures.js"></script>
     <script src="scripts/addPic.js"></script>
 </body>
 </html>

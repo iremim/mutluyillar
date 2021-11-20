@@ -35,7 +35,7 @@ const quests = [
     {
         id:4,
         question: "Aklimdan burda gecen ne olabilir?",
-        img:"qPics/aklimdanGecenNe.JPG",
+        img:"qPics/aklimdanGecenNe.jpg",
         answers: [
             {value: 3, option: "Uff gunes batsa da gitsek!!"},
             {value: 6, option: "Ne kadar sansli bi kiz ya"},

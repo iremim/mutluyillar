@@ -1,6 +1,5 @@
 "use strict!";
 
-
 let inputPlace = document.getElementById("inputPlace");
 
 function createFotoInputs() {
