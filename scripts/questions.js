@@ -1,4 +1,4 @@
-const questions = [
+const quests = [
     {
         id:1,
         question: "Bu resimdeki cirkini ne kadar seviyorum sence?",

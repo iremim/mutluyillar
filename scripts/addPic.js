@@ -1,6 +1,5 @@
 "use strict!";
 
-console.log(pictures);
 
 let inputPlace = document.getElementById("inputPlace");
 

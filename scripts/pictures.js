@@ -1,4 +1,4 @@
-const pictures = [
+const pics = [
     {
         id:1,
         pic : "aYear/teleferik.jpg",
