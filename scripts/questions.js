@@ -57,7 +57,7 @@ const quests = [
     {
         id:6,
         question: "Ilk gittigimiz mekana poanin kac?",
-        img:"qPics/ilkbulusma.jpg",
+        img:"qPics/ilkbulusma.JPG",
         answers: [
             {value: 3, option: "10 uzerinden 3"},
             {value: 5, option: "10 uzerinden 5"},

@@ -234,9 +234,10 @@ body{
 		top: 50;
 	}
 	.navigateButtons button {
-		height: 20px;
-		width: 20px;
-		left: 40%;
+		height: 30px;
+		width: 30px;
+		left: 45%;
+		top: 7%;
 	}
 	#pictureContainer {   
 		width: 70%;
