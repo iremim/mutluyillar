@@ -6,6 +6,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 main {
@@ -94,13 +95,7 @@ main {
 
 @media only screen and (max-width: 600px) {
     body{
-        display: flex;
-        justify-content: center;
-        height: 100vh;
         background-image: url("../backgroundPics/newYear.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     
     main {

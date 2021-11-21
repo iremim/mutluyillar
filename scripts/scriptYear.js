@@ -42,7 +42,11 @@ function createPics(picture){
 
     imgBox.addEventListener("click", (event)=>{
      
-        console.log(event);
+        // window.screenTop();
+
+        let imgPosition = event.Y;
+        
+        window.scrollTo(0, 0);
 
         let chosenID = event.target.parentElement.parentElement.id;
 
@@ -66,8 +70,6 @@ function createPics(picture){
 
         imgBox.addEventListener("click", (e)=>{
 
-            window.scrollTo();
-
             let allBoxes = document.querySelectorAll(".mainBox");
 
             allBoxes.forEach(e => {
@@ -79,6 +81,7 @@ function createPics(picture){
             e.target.parentElement.classList.toggle("big");
             e.target.parentElement.parentElement.classList.toggle("bigger");
             e.target.parentElement.nextElementSibling.classList.toggle("moreFrontier");
+            
         })
         
     })

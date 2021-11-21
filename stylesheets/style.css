@@ -8,8 +8,8 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
     height: 100vh;
-	width: 100vw;
-	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x: hidden;
 };
 
 #aYear {
@@ -165,7 +165,7 @@ body{
 
 .navigateButtons {
 	position: relative;
-	bottom: 110;
+	bottom: 100;
 	right: 25;
 }
 
@@ -220,7 +220,7 @@ body{
 
 	.navigateButtons {
 		position: relative;
-		bottom: 104;
+		bottom: 102;
 		right: 25;
 	}
 	body{
@@ -234,7 +234,7 @@ body{
 	}
 	.playG {
 		width: 85vw;
-		max-height: 92vh;
+		max-height: 90vh;
 		overflow-y: scroll;
 		overflow-x: hidden;
 		position: relative;

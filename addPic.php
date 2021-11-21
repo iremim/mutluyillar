@@ -18,12 +18,14 @@
         <div id="title">
             <h1 style="font-family: 'Cuprum', sans-serif;">Albume Ekle</h1>
         </div>
-        <div id="inputPlace">
-
-        </div>
+        <form action="/phpfiles/reciever.php" method="POST">
+            <input type="file" name="img">
+            <input type="file" name="imgFlip">
+            <button>Ekle</button>
+        </form>
     </main>
-
+<!-- 
     <script src="scripts/pictures.js"></script>
-    <script src="scripts/addPic.js"></script>
+    <script src="scripts/addPic.js"></script> -->
 </body>
 </html>
