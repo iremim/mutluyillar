@@ -43,7 +43,8 @@ function createPics(picture){
     imgBox.addEventListener("click", (event)=>{
      
         // window.screenTop();
-
+  
+        document.querySelector("main").style.overflow = "hidden";
         fotoPlace.classList.add("biggerFotoPlace");
 
         let chosenID = event.target.parentElement.parentElement.id;
@@ -54,6 +55,8 @@ function createPics(picture){
         let chosensUnderText = chosenParentsImgBox.nextElementSibling;
         let chosenParentsMainBox = chosenParentsImgBox.parentElement;
 
+        
+        chosenParentsMainBox.classList.add("big");
         chosenParentsImgBox.classList.add("bigger");
 
         let allBoxes = document.querySelectorAll(".mainBox");
@@ -62,6 +65,7 @@ function createPics(picture){
             if(e.id !== chosenID){
                 // e.classList.add("hide");
                 e.classList.add("opacity");
+
             }
         });
 
@@ -72,12 +76,15 @@ function createPics(picture){
             allBoxes.forEach(e => {
                 if(e.id !== chosenID){
                     e.classList.toggle("opacity");
+
                 }
             });
 
             fotoPlace.classList.toggle("biggerFotoPlace");
-
+            document.querySelector("main").style.overflow = "scroll";
             e.target.parentElement.classList.toggle("bigger");
+            e.target.parentElement.parentElement.classList.toggle("big");
+
         });
         
     })
