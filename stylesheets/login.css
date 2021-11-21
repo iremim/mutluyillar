@@ -1,0 +1,108 @@
+body{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    margin: 0;
+
+    background-image: url("../backgroundPics/loginYatay.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    height: 100vh;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	left: 15%;
+}
+form {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 1px solid honeydew;
+	height: 50vh;
+	width: 25vw;
+	flex-direction: column;
+	border-radius: 10px;
+	background-color: deepskyblue;
+}
+input{
+	color: honeydew;
+	background: black;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+	width: 10v;
+	text-align: center;
+}
+button {
+    border: none;
+    padding: 15px;
+    background-color: black;
+    color: honeydew;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 1px solid honeydew;
+}
+.error {
+	margin: 0;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: center;
+        background-image: url("../backgroundPics/loginDikey.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        left: 0;
+    }
+    form {
+        display: flex;
+        justify-content: space-evenly;
+        border: unset;
+        height: 25vh;
+        width: 50vw;
+        flex-direction: column;
+        background-color: unset;
+        border-radius: unset;
+    }
+    input{
+	color: honeydew;
+	background: black;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+	width: 10v;
+	text-align: center;
+    }
+    button {
+        border: none;
+        padding: 15px;
+        background-color: black;
+        color: honeydew;
+        font-weight: bold;
+        border-radius: 40px;
+        border: 1px solid honeydew;
+    }
+    .error {
+        margin: 0;
+        color: black;
+        text-align: center;
+    }
+}
