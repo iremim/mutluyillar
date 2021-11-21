@@ -52,7 +52,7 @@ function setNextQuestion(questions = shuffliedQuestions[currentQuestionIndex]){
     
     //Tömmer (tar bort) elementen som ligger i answer fältet 
     function clearTheAnswerfield(){
-    document.querySelector(".navigateButtons").style.display="none";
+    document.querySelector(".navigateButtons").classList.add("opacity");
 
     //Tömmer fältet tills den är tom.
      while(answersField.firstChild){
@@ -96,7 +96,7 @@ function setNextQuestion(questions = shuffliedQuestions[currentQuestionIndex]){
        
             el.target.classList.add("selectedOpt");
 
-            document.querySelector(".navigateButtons").style.display="flex";
+            document.querySelector(".navigateButtons").classList.remove("opacity");
         });
         answersField.append(radio,button);
     });   
@@ -108,7 +108,7 @@ nextButton.addEventListener("click", ()=>{
     let chosenAnswers = document.querySelectorAll(".selectedOpt");
     totalPoan += parseInt(chosenAnswers[0].attributes[1].value);
 
-    if(currentQuestionIndex === 11){
+    if(currentQuestionIndex === 10){
         if(totalPoan<75){
             nextButton.style.display ="none";
             
@@ -199,17 +199,15 @@ function createQuizContainer(){
    
     //Skapar navigation fältet 
     let navigateButtons = document.createElement("div");
-    navigateButtons.classList.add("navigateButtons","hide");
+    navigateButtons.classList.add("navigateButtons","opacity");
 
     //Skapar nästa pillen
     let rightArrow = document.createElement("button");
     rightArrow.setAttribute("id", "right");
     rightArrow.innerHTML = `&#x2192;`;
 
-
     navigateButtons.append(rightArrow);
-
-    questionsContainer.append(question,answersButtons,navigateButtons)
+    questionsContainer.append(question,answersButtons,navigateButtons);
 
     quizcontainer.append(pictureContainer,questionsContainer);
     document.querySelector("#playGround").append(quizcontainer);

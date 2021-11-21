@@ -1,14 +1,19 @@
-body{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-image: url("../backgroundPics/mutluyillar.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-}
 
+body {
+	display: flex;
+	align-items: center;
+    background-image: url("../backgroundPics/mutluyillar.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100vw;
+}
+#titleBox {
+    display: none;
+}
 main {
 	height: 100vh;
 	width: 90vw;
@@ -26,7 +31,6 @@ main {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	gap: 20px;
     position: relative;
-    margin-top: -7px;
 }
 .mainBox {
 	display: flex;
@@ -34,14 +38,10 @@ main {
     position: relative;
     width: 100%;
     flex-direction: column;
+    opacity: 100%;
+    transition: all 1s ease;
 }
-.imgBox {
-	position: relative;
-	height: 35vh;
-	overflow: hidden;
-	border: 1px solid honeydew;
-	border-radius: 20px;
-}
+
 .img{
     width: 100%;
     position: relative;
@@ -73,14 +73,13 @@ main {
 	animation: w3-spin 7s infinite linear;
 }
 
-.bigger {
-	width: 55vw;
-    left: 35%;
+div.bigger {
+    height: 55vh;
+    width: 90vw;
 }
-.big {
-	height: 95vh;
-	position: absolute;
-	top: -55%;
+#fotoPlace.biggerFotoPlace {
+	gap: 0px;
+    margin: 0px;
     transition: all 1s;
 }
 .moreFrontier{
@@ -92,12 +91,28 @@ main {
 .hide{
     display: none;
 }
+.opacity {
+    opacity: 0%;
+    width: 0;
+}
 
 @media only screen and (max-width: 600px) {
     body{
         background-image: url("../backgroundPics/newYear.jpg");
     }
+    #titleBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     
+        width: 100%;
+        background-color: black;
+        color: white;
+        height: 5vh;
+        font-size: 11px;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
     main {
         height: 100vh;
         width: 90vw;
@@ -161,18 +176,12 @@ main {
         animation: w3-spin 7s infinite linear;
     }
     div.bigger {
-        width: 90vw;
-        left: 0;
+        
     }
     div.big{
-        height: 55vh;
-        position: absolute;
-        top: 0;
+      
     }
     .moreFrontier{
-        position: relative;
-        z-index: 22;
-        top: 57vh;
         font-size: 30px;
     }
     .hide{

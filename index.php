@@ -16,14 +16,16 @@
     <title>Birlikte Nice Senelere</title>
 </head>
 <body>
-    <a href="ayear.php" id="aYear"><i class="material-icons" style="font-size:24px;position: absolute;color: white;top: 0.5vh; left: 1vw;">collections</i></a>
-    <a href="addPic.php" id="addPic"><i class="fa fa-plus" style="z-index: 20; font-size:24px;position: absolute;color: white;top: 0.5vh; right: 1vw;"></i></a>
-
+    <div id="titleBox" class="titleBox">
+        <a href="ayear.php" id="aYear"><i class="material-icons" style="font-size:24px;color: white;">collections</i></a>
+        <h1 style="font-family:'Kaushan Script', cursive; font-size:25px; width: 34vh;text-align: center;">HediyApp</h1>
+        <a href="addPic.php" id="addPic"><i class="fa fa-plus" style="font-size:24px; color: white;"></i></a>
+    </div>
     <div id="playGround" class="playArea playG">
         <div id="firstDiv" style="color: black; position: relative;">
             <h2>Mutlu Yıllar Sevgilim <i id="heart" class='far fa-heart' style='font-size:34px;color:red; margin-left: 6.8px;'></i></h2>
         </div>
-        <div id="secondDiv" style="padding: 10px; overflow-y: scroll; height: 160px; position: relative; text-align: justify;">
+        <div id="secondDiv" style="padding: 10px; height: 160px; position: relative; text-align: justify;">
             <p>Bugün sevgili karımın doğum günü, bu yüzden onu mutlu etmek için bu küçük sayfayı yaptım.
                 Umarım seninle geçireceğimiz daha çok doğum günleri olur canım. 
                 Ne dün ne yarın, insan hayatındaki en önemli an şu anıdır.  

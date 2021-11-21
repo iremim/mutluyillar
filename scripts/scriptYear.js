@@ -44,9 +44,7 @@ function createPics(picture){
      
         // window.screenTop();
 
-        let imgPosition = event.Y;
-        
-        window.scrollTo(0, 0);
+        fotoPlace.classList.add("biggerFotoPlace");
 
         let chosenID = event.target.parentElement.parentElement.id;
 
@@ -56,33 +54,31 @@ function createPics(picture){
         let chosensUnderText = chosenParentsImgBox.nextElementSibling;
         let chosenParentsMainBox = chosenParentsImgBox.parentElement;
 
-        chosenParentsMainBox.classList.add("bigger");
-        chosenParentsImgBox.classList.add("big");
-        chosensUnderText.classList.add("moreFrontier");
+        chosenParentsImgBox.classList.add("bigger");
 
         let allBoxes = document.querySelectorAll(".mainBox");
 
         allBoxes.forEach(e => {
             if(e.id !== chosenID){
-                e.classList.add("hide");
+                // e.classList.add("hide");
+                e.classList.add("opacity");
             }
         });
 
-        imgBox.addEventListener("click", (e)=>{
+            imgBox.addEventListener("click", (e)=>{
 
             let allBoxes = document.querySelectorAll(".mainBox");
 
             allBoxes.forEach(e => {
                 if(e.id !== chosenID){
-                    e.classList.toggle("hide");
+                    e.classList.toggle("opacity");
                 }
             });
 
-            e.target.parentElement.classList.toggle("big");
-            e.target.parentElement.parentElement.classList.toggle("bigger");
-            e.target.parentElement.nextElementSibling.classList.toggle("moreFrontier");
-            
-        })
+            fotoPlace.classList.toggle("biggerFotoPlace");
+
+            e.target.parentElement.classList.toggle("bigger");
+        });
         
     })
 

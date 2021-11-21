@@ -1,6 +1,10 @@
+#titleBox{
+	display: none;
+}
+
 body{
     display: flex;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: center;
     margin: 0;
 
@@ -12,21 +16,11 @@ body{
 	overflow-x: hidden;
 };
 
-#aYear {
-	font-size: 24px;
-	position: relative;
-	color: white;
-	top: -45vh;
-	left: 0.6vw;
-}
-
 .playArea{
 	width: 85vw;
 }
 
 .playG {
-	height: fit-content;
-
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -40,7 +34,8 @@ body{
 	background-color: aliceblue;
 
 	text-align: center;
-	margin-bottom: 17px;
+	width: 90vw;
+	height: 80vh;
 }
 
 #playGround h2 {
@@ -88,17 +83,16 @@ body{
     flex-direction: row;
     justify-content: center;
 
-	height: 78vh;
-	width: 90vw;
-
+	width: 100%;
+	height: 100%;
 	transition: width 1s ease-in;
 }
 
 #pictureContainer {   
     width: 40%;
     position: relative;
-	display: flex;
 	justify-content: center;
+	display: flex;
 	align-items: center;
 }
 #pictureContainer > img {   
@@ -107,23 +101,19 @@ body{
 }
 
 /* QUESTIONPARENT  */
+
 .questionsContainer {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
-	position: relative;
-	border-radius: 2rem;
 	gap: 20px;
 	max-width: 50vw;
-	height: 50vh;
-	top: 30;
 }
 
 /* question  */
 
 .questionsContainer>div:first-child{
-    flex-basis: 15%;
     width: 100%; 
 
     display: flex;
@@ -154,8 +144,6 @@ body{
 	align-items: center;
 	padding: 3px;
 	border-radius: 10px;
-
-	font-family: 'Kaushan Script', cursive;
 }
 .selectedOpt {
 	background-color: black;
@@ -164,9 +152,14 @@ body{
 }
 
 .navigateButtons {
-	position: relative;
-	bottom: 100;
-	right: 25;
+	position: absolute;
+	bottom: 38%;
+	opacity: 100%;
+	transition: all 0.5s ease;
+}
+
+.opacity{
+	opacity: 0%;
 }
 
 .navigateButtons button {
@@ -174,7 +167,6 @@ body{
 	color: lightskyblue;
 	font-size: 20px;
 	border-radius: 100%;
-	position: absolute;
 
 	height: 50px;
 	width: 50px;
@@ -199,38 +191,49 @@ body{
 		50% { left: 46%; }
 		100% { left: 44%; }
 	}
-	.container {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		height: 92vh;
+	body {
 		align-items: center;
-	}
-	.questionsContainer {
-		max-width: 90%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		position: relative;
-		gap: 10px;
-		margin-top: 10px;
-		height: 25vh;
-		top: 0;
-	}
-
-	.navigateButtons {
-		position: relative;
-		bottom: 102;
-		right: 25;
-	}
-	body{
-		align-items: flex-start;
 		background-image: url("../backgroundPics/kapadokya.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 100vh;
-
 		overflow: hidden;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 100vw;
+	}
+	#titleBox {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		width: 100%;
+		background-color: black;
+		color: white;
+		height: 5vh;
+		font-size: 11px;
+		flex-direction: row;
+		margin-bottom: 5px;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		/* height: 90vh; */
+		align-items: center;
+	}
+	.questionsContainer {
+		display: flex;
+		flex-direction: column;
+		top: 0;
+		height: auto;
+		max-width: 90%;
+		gap: 0;
+	}
+	.navigateButtons {
+		position: relative;
+		bottom: 102;
+		right: 25;
 	}
 	.playG {
 		width: 85vw;
@@ -238,7 +241,7 @@ body{
 		overflow-y: scroll;
 		overflow-x: hidden;
 		position: relative;
-		top: 30;
+		height: auto;
 	}
 	.navigateButtons button {
 		position: absolute;
@@ -246,19 +249,45 @@ body{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: 13;
 	}
 	#pictureContainer {   
 		width: 95%;
 		position: relative;
+		justify-content: center;
 	}
 	#pictureContainer > img {   
 		width: 100%;
 	}
 	.questionsContainer > div:first-child {
-		display: flex;
-		align-items: flex-end;
-		justify-content: center;
 		text-align: center;
+		margin-top: 10px;
+	}
+	#answersButtons {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		margin-top: 5px;
+		min-width: 100%;
+	}
+	.answer{
+		border: none;
+		background-color: lightskyblue;
+		font-size: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 3px;
+		border-radius: 10px;
+		height: 6vh;
+		min-height: auto;
+		min-width: auto;
+		width: auto;
+	}
+	.selectedOpt {
+		background-color: black;
+		color: honeydew;
+		font-weight: bold;
 	}
   }
 

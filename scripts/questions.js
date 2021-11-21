@@ -46,7 +46,7 @@ const quests = [
     {
         id:5,
         question: "Burda evet dendi okey, tamam ama tekrar sorsalar cevabin ne olurdu?",
-        img:"qPics/sizcecevapne.JPG",
+        img:"qPics/sizcecevapne.png",
         answers: [
             {value: 7, option: "Evet!"},
             {value: 3, option: "Yok almayim!"},
@@ -115,9 +115,20 @@ const quests = [
         img:"qPics/bonus.JPG",
         answers: [
             {value: 15, option: "Amcanin `Kama` meyve bicagi"},
-            {value: 14, option: "Amcanin balkonu"},
-            {value: 10, option: "Amcanin göbegi"},
+            {value: 12, option: "Amcanin balkonu"},
+            {value: 7, option: "Amcanin göbegi"},
             {value: 5, option: "Ciddi biseyler"}
+        ] 
+    },
+    {
+        id:12,
+        question: "Bu uyuyan guzeli nasil uyandirmali?",
+        img:"qPics/nasiluyandirirsin.JPG",
+        answers: [
+            {value: 6, option: "Bi kova suyla"},
+            {value: 5, option: "Durterek"},
+            {value: 3, option: "Tokatla"},
+            {value: 10, option: "Öperek"}
         ] 
     }
 ];
