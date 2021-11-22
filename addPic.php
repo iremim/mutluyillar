@@ -29,7 +29,7 @@ if(!isset($_SESSION["isLoggedIn"])){
         <div id="title">
             <h1 style="font-family: 'Cuprum', sans-serif;">Albume Ekle</h1>
         </div>
-        <form id="upload-img" action="/phpfiles/reciever.php" method="POST" enctype="multipart/form-data">
+        <form id="upload-img" action="/phpfiles/addFoto.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="img">
             <input type="file" name="imgFlip">
             <input type="text" name="name" placeholder="Name">
