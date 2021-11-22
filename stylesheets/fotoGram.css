@@ -65,7 +65,7 @@ main {
     body{
         display: flex;
         align-items: center;
-        background-image: url("../backgroundPics/album.jpeg");
+        background-image: url("../backgroundPics/albumKapak2.jpeg");
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
@@ -83,7 +83,6 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 4vh;
     }
     #titleBox {
         display: flex;

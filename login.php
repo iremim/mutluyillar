@@ -4,6 +4,7 @@ session_start();
 function checkTheUser($users, $username, $password){
     foreach($users as $user){
         if($user["username"] == $username && $user["password"] == $password){
+            $_SESSION["inLoggedUser"] = $user;
             return true;
         } 
     }
@@ -27,12 +28,6 @@ else{
             exit();
         } else{
             if(checkTheUser($users, $username, $password)){
-                $_SESSION["isLoggedIn"] = true;
-                foreach($users as $user){
-                    if($user["email"]== $email){
-                        $_SESSION["inLoggedUser"] = $user;
-                    }
-                }
                 header("Location: index.php");
                 exit();
             }else{

@@ -1,23 +1,22 @@
 <?php
+session_start();
+
+if(!isset($_SESSION["isLoggedIn"])){
+    header("Location: login.php");
+    exit();
+}
 
 $method = $_SERVER["REQUEST_METHOD"];
 
-function loadJson($filename){
-    $json = file_get_contents($filename);
-    return json_decode($json, true);
-};
-
-function saveJson($filename, $data){
-    $json = json_encode($data, JSON_PRETTY_PRINT);
-    file_put_contents($filename, $json);
-};
+require_once "functions.php";
 
 $fotos = loadJson("addedFotos.json");
 
 $highestId = 0;
 
-if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && isset($_POST["name"])){
+if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && isset($_POST["albumName"]) && isset($_POST["name"])){
     $imgName = $_POST["name"];
+    $albumName = $_POST["albumName"];
 
     $img = $_FILES["img"];
     $filename = $img["name"];
@@ -51,6 +50,7 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
     
         $newFoto = [
             "id"=> $highestId,
+            "albumName"=>$albumName,
             "imgUrl"=>"https://hediyapp.herokuapp.com/upload/$uniqueFilename.$ext",
             "name"=> $imgName,
             "imgFlipUrl"=> "https://hediyapp.herokuapp.com/upload/$uniqueFilename"."Flip.$ext",
@@ -61,7 +61,7 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
       saveJson("addedFotos.json", $fotos);
 
 
-      header("Locations: ../fotoGram.php?added=true");
+      header("Locations: ../fotoGram.php");
       exit();
 }
 

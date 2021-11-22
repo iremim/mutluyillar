@@ -1,0 +1,72 @@
+#titleBox {
+    display: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../backgroundPics/ekleArkaPlan.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+main {
+	height: 100vh;
+	position: relative;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+#createAlbum {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 20%;
+}
+#title{
+    text-align: center;
+    color: white;
+}
+#inputPlace{
+    display: flex;
+    justify-content: center;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        background-image: url("../backgroundPics/ekleArkaPlan2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #titleBox {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		width: 100%;
+		background-color: black;
+		color: white;
+		height: 5vh;
+		font-size: 11px;
+		flex-direction: row;
+		margin-bottom: 5px;
+	}
+}
