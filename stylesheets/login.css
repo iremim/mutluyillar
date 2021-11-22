@@ -8,6 +8,8 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
     height: 100vh;
+
+    background-position-x: inherit;
 }
 main {
 	display: flex;
@@ -63,8 +65,6 @@ button {
 
         flex-direction: column;
         justify-content: center;
-
-        background-position-x: inherit;
     }
     main {
         display: flex;
