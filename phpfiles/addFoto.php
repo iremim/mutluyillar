@@ -60,7 +60,7 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
       array_push($fotos, $newFoto);
       saveJson("addedFotos.json", $fotos);
 
-      echo "<a>".$newFoto["imgUrl"]."</a>";
+      echo "<img src=".$newFoto["imgUrl"]."style='width:'40px'; height:40px;>";
     //   header("Locations: albums.php");
       exit();
 }
