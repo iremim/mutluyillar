@@ -1,3 +1,9 @@
 [
-  
+    {
+        "id": 1,
+        "imgUrl": "https:\/\/hediyapp.herokuapp.com\/upload\/66c4d2dd8b3efcde475ba054d8de209a742a199b.jpg",
+        "name": "naber",
+        "imgFlipUrl": "https:\/\/hediyapp.herokuapp.com\/upload\/66c4d2dd8b3efcde475ba054d8de209a742a199bFlip.jpg",
+        "nameFlip": "naberFlip"
+    }
 ]
