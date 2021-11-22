@@ -24,7 +24,7 @@ if(!isset($_SESSION["isLoggedIn"])){
 <body>
     <div id="titleBox">
         <a href="index.php"><i class="fa fa-home" style="font-size:24px;color: white;"></i></a>
-        <h1 style="font-family:'Kaushan Script', cursive; font-weight:revert; font-size:25px; width: 34vh;text-align: center;">HediyGram</h1>
+        <h1 style="font-family:'Kaushan Script', cursive; font-weight:bold; font-size:25px; width: 34vh;text-align: center;"><a href="logout.php" style="text-decoration: none;color: white;">HediyGram</a></h1>
         <a href="addPic.php" id="addPic"><i class="fa fa-plus" style="font-size:24px; color: white;"></i></a>
     </div> 
     <main>

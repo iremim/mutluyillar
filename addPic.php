@@ -15,20 +15,24 @@ if(!isset($_SESSION["isLoggedIn"])){
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/addPic.css">
     <title>Foto Ekle</title>
 </head>
 <body>    
-
-    <a href="index.php" id="aYear"><i class="fa fa-home" style="z-index: 20; font-size:24px;position: absolute;color: white;top: 0.8vh; left: 1.5vw;"></i></a>
-    <a href="ayear.php" id="aYear"><i class="material-icons" style="z-index: 20; font-size:24px;position: absolute;color: white;top: 0.8vh; right: 1.5vw;">collections</i></a>
+    <div id="titleBox" class="titleBox">
+        <a href="index.php"><i class="fa fa-home" style="font-size:24px;color: white;"></i></a>
+        <h1 style="font-family:'Kaushan Script', cursive; font-weight:bold; font-size:25px; width: 34vh;text-align: center;"><a href="logout.php" style="text-decoration: none;color: white;">HediyApp</a></h1>
+        <a href="ayear.php" id="aYear"><i class="material-icons" style="font-size:24px;color: white;">collections</i></a>
+    </div>
     <main>
         <div id="title">
             <h1 style="font-family: 'Cuprum', sans-serif;">Albume Ekle</h1>
         </div>
-        <form action="/phpfiles/reciever.php" method="POST">
+        <form id="upload-img" action="/phpfiles/reciever.php" method="POST" enctype="multipart/form-data">
             <input type="file" name="img">
             <input type="file" name="imgFlip">
+            <input type="text" name="name" placeholder="Name">
             <button>Ekle</button>
         </form>
     </main>

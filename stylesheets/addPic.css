@@ -1,3 +1,6 @@
+#titleBox {
+    display: none;
+}
 body{
     display: flex;
     justify-content: center;
@@ -6,6 +9,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
 }
 
 main {
@@ -47,4 +51,17 @@ main {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    #titleBox {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		width: 100%;
+		background-color: black;
+		color: white;
+		height: 5vh;
+		font-size: 11px;
+		flex-direction: row;
+		margin-bottom: 5px;
+	}
 }
