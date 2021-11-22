@@ -51,7 +51,7 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
     
         $newFoto = [
             "id"=> $highestId,
-            "imgUrl"=>"upload/$uniqueFilename.$ext",
+            "imgUrl"=>"https://hediyapp.herokuapp.com/upload/$uniqueFilename.$ext",
             "name"=> $imgName,
             "imgFlipUrl"=> "https://hediyapp.herokuapp.com/upload/$uniqueFilename"."Flip.$ext",
             "nameFlip" => $imgName."Flip",
