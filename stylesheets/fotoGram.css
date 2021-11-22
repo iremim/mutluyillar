@@ -1,0 +1,137 @@
+
+body {
+	display: flex;
+	align-items: center;
+    background-image: url("../backgroundPics/loginYatay.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+}
+#titleBox {
+    display: none;
+}
+main {
+	height: auto;
+	width: 90vw;
+    position: relative;
+    transition: all 1s ease;
+}
+#title{
+    text-align: center;
+    color: white;
+}
+#fotoPlace {
+	display: flex;
+	gap: 5px;
+	position: relative;
+    overflow-x: scroll;
+}
+.albumBox {
+	background-image: url("../backgroundPics/AlbumKapakFoto.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 25vh;
+	width: 75vw;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: right;
+}
+.albumBox > a {
+	text-decoration: none;
+	font-family: 'Marck Script', cursive;
+	font-size: 35px;
+	width: 80%;
+	max-width: 70%;
+	max-height: 80%;
+	overflow: scroll;
+}
+.hide{
+    display: none;
+}
+.opacity {
+	opacity: 0%;
+	width: 0;
+	left: -100%;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        align-items: center;
+        background-image: url("../backgroundPics/album.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100vw;
+    }
+    main {
+        height: 90vh;
+        width: 90vw;
+        position: relative;
+        overflow-y: scroll;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4vh;
+    }
+    #titleBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        width: 100%;
+        background-color: black;
+        color: white;
+        height: 5vh;
+        font-size: 11px;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+    #title{
+        text-align: center;
+        color: white;
+    }
+    #fotoPlace {
+        display: grid;
+        gap: 25px;
+        position: relative;
+        overflow-x: scroll;
+        grid-template-columns: 1fr;
+    }
+    .albumBox {
+        background-image: url("../backgroundPics/AlbumKapakFoto.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 25vh;
+        width: 75vw;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .albumBox > a {
+        text-decoration: none;
+        font-family: 'Marck Script', cursive;
+        font-size: 35px;
+        width: 80%;
+        max-width: 70%;
+        max-height: 80%;
+        overflow: scroll;
+    }
+    .hide{
+        display: none;
+    }
+    
+}

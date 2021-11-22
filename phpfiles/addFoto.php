@@ -60,8 +60,8 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
       array_push($fotos, $newFoto);
       saveJson("addedFotos.json", $fotos);
 
-      echo "<img src=".$newFoto["imgUrl"].">";
-    //   header("Locations: albums.php");
+
+      header("Locations: ../fotoGram.php?added=true");
       exit();
 }
 

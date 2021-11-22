@@ -26,9 +26,9 @@ if(!isset($_SESSION["isLoggedIn"])){
 </head>
 <body>
     <div id="titleBox" class="titleBox">
-        <a href="ayear.php" id="aYear"><i class="material-icons" style="font-size:24px;color: white;">collections</i></a>
+        <a href="fotoGram.php"><i class="material-icons" style="font-size:24px;color: white;">collections</i></a>
         <h1 style="font-family:'Kaushan Script', cursive; font-size:25px; width: 34vh;text-align: center;"><a href="logout.php" style="text-decoration: none;color: white;">HediyApp</a></h1>
-        <a href="addPic.php" id="addPic"><i class="fa fa-plus" style="font-size:24px; color: white;"></i></a>
+        <a href="addPic.php"><i class="fa fa-plus" style="font-size:24px; color: white;"></i></a>
     </div>
     <div id="playGround" class="playArea playG">
         <div id="firstDiv" style="color: black; position: relative;">
