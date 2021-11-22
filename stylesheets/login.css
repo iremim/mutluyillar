@@ -63,6 +63,8 @@ button {
 
         flex-direction: column;
         justify-content: center;
+
+        background-position-x: inherit;
     }
     main {
         display: flex;
@@ -88,7 +90,7 @@ button {
 	border: none;
 	padding: 5px;
 	border-radius: 5px;
-	width: 10v;
+	width: 55vw;
 	text-align: center;
     }
     button {
