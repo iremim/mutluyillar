@@ -8,8 +8,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
     height: 100vh;
-
-    background-position-x: initial;
+    width: 100vw;
 }
 main {
 	display: flex;
