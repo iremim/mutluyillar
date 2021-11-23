@@ -30,6 +30,8 @@ main{
 	gap: 5px;
 	position: relative;
     overflow-x: scroll;
+
+    align-items: center;
 }
 .mainBox {
 	display: flex;
