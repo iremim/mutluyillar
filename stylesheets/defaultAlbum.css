@@ -96,7 +96,9 @@ div.bigger {
 	transition: all 1s;
 	overflow: hidden;
 	display: flex;
-    justify-content: center;
+	justify-content: center;
+	height: 100%;
+	align-items: center;
 }
 .moreFrontier{
 	position: relative;

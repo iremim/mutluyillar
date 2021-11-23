@@ -44,8 +44,8 @@ $albums = loadJson("phpfiles/albums.json");
             ?>
             <input type="file" name="img">
             <input type="file" name="imgFlip">
-            <input type="text" name="name" placeholder="Konu / Tarih">
-            <select id="Album" name="albumName">    
+            <input id="inputLast" type="text" name="name" placeholder="Konu / Tarih">
+            <select id="albumSelect" name="albumName">    
                 <?php
                     foreach($albums as $album){
                         echo "<option value=".$album["albumName"].">".$album["albumName"]."</option>";

@@ -46,9 +46,16 @@ input {
 	border: none;
 	padding: 5px;
 	border-radius: 5px;
-	width: auto;
+	width: 30vw;
 	text-align: center;
 	border: 1px solid deepskyblue;
+}
+#albumSelect {
+	padding: 2px;
+	background-color: black;
+	border: 1px solid deepskyblue;
+	color: white;
+	font-style: italic;
 }
 button {
     border: none;
@@ -103,5 +110,11 @@ button {
 		border-radius: 10px;
 		background-color: black;
 		padding: 15px;
+	}
+	input {
+		width: 60vw;
+	}
+	#inputLast {
+		width: auto;
 	}
 }

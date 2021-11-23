@@ -15,7 +15,7 @@ body{
 	font-weight: bold;
 }
 #titleBox {
-display: none;
+	display: none;
 }
 main {
 	height: 100vh;
