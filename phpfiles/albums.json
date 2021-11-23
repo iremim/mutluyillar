@@ -1,7 +1,20 @@
-{
-    "albums" : [
-        {
-            "albumName": "Temel"
-        }
-    ]
-}
+[
+    {
+        "albumName": "Temel"
+    },
+    {
+        "albumName": "eglence"
+    },
+    {
+        "albumName": "moments"
+    },
+    {
+        "albumName": "enler"
+    },
+    {
+        "albumName": "balim"
+    },
+    {
+        "albumName": "Nasilyani"
+    }
+]

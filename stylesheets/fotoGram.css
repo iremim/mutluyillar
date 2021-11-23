@@ -50,7 +50,6 @@ main {
 	width: 80%;
 	max-width: 70%;
 	max-height: 80%;
-	overflow: scroll;
 }
 .hide{
     display: none;
@@ -82,7 +81,7 @@ main {
 
         display: flex;
         justify-content: center;
-        align-items: center;
+        margin-top: 3vh;
     }
     #titleBox {
         display: flex;
@@ -127,7 +126,6 @@ main {
         width: 80%;
         max-width: 70%;
         max-height: 80%;
-        overflow: scroll;
     }
     .hide{
         display: none;

@@ -50,7 +50,7 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
     
         $newFoto = [
             "id"=> $highestId,
-            "albumName"=>$albumName,
+            "album"=>$albumName,
             "imgUrl"=>"https://hediyapp.herokuapp.com/upload/$uniqueFilename.$ext",
             "name"=> $imgName,
             "imgFlipUrl"=> "https://hediyapp.herokuapp.com/upload/$uniqueFilename"."Flip.$ext",
@@ -58,11 +58,16 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
         ];
 
       array_push($fotos, $newFoto);
-      saveJson("addedFotos.json", $fotos);
+      $saved = saveJson("addedFotos.json", $fotos);
 
-
-      header("Locations: ../fotoGram.php");
-      exit();
+        if($saved){
+          header("Location: ../addPic.php?ok=true");
+          exit();
+        }else{
+          header("Location: ../addPic.php?error=true");
+          exit();
+        }
+      
 }
 
 ?>

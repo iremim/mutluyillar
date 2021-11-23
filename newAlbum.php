@@ -1,4 +1,5 @@
 <?php
+error_reporting(-1);
 
 session_start();
 
@@ -7,23 +8,41 @@ if(!isset($_SESSION["isLoggedIn"])){
     exit();
 }
 
-if(isset($_POST["newAlbum"])){
-    $newAlbum = $_POST["newAlbum"];
+require_once "phpfiles/functions.php";
+$albums = loadJson("phpfiles/albums.json");
 
+if(!isset($_SESSION["isLoggedIn"])){
+    header("Location: login.php");
+    exit();
+}
 
-    $nameOfNewAlbum = $newAlbum["name"];
+if(isset($_POST["albumName"])){
+    $available = true;
+
+    $nameOfNewAlbum = $_POST["albumName"];
+
+    $newAlbum = [
+        "albumName" => $nameOfNewAlbum
+    ];
+
+    foreach($albums as $album){
+        if($album["albumName"] == $nameOfNewAlbum){
+            $available = false;
+        }
+    }
     
+    if($available){
+        array_push($albums, $newAlbum);
+        saveJson("phpfiles/albums.json", $albums);
+        header("Location: newAlbum.php?ok=true");
+        exit();
+    }else{
+        header("Location: newAlbum.php?error=true");
+        exit();
+    }
 }
 ?>
 
-<?php
-session_start();
-
-if(!isset($_SESSION["isLoggedIn"])){
-    header("Location: login.php");
-    exit();
-}
-?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,8 +66,18 @@ if(!isset($_SESSION["isLoggedIn"])){
         <div id="title">
             <h1 style="font-family: 'Cuprum', sans-serif;">Yeni Album</h1>
         </div>
-        <form id="newAlbum" action="/phpfiles/addAlbum.php" method="POST">
+        <form id="newAlbum" action="newAlbum.php" method="POST">
+        <?php
+                if(isset($_GET["error"])){
+                    echo '<p style="color:red;">Album adi kullanilmakta!</p>';
+                }
+            ?>
             <input type="text" name="albumName" placeholder="Album Adi">
+            <?php
+                if(isset($_GET["ok"])){
+                    echo '<p style="color:green;">Album olusturuldu!</p>';
+                }
+            ?>
             <button>Olustur</button>
         </form>
     </main>

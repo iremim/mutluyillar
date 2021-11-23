@@ -16,8 +16,8 @@ if(!isset($_SESSION["isLoggedIn"])){
                 </a></div>
         ';
 
-        $data = loadJson("phpfiles/albums.json");
-        $albums = $data["albums"];
+        $albums = loadJson("phpfiles/albums.json");
+        
         foreach($albums as $album){ 
         echo "<div class="."albumBox".">
             <a href="."albumContent.php?album=".$album["albumName"].">".

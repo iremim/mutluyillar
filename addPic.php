@@ -29,11 +29,21 @@ if(!isset($_SESSION["isLoggedIn"])){
             <h1 style="font-family: 'Cuprum', sans-serif;">Albume Ekle</h1>
         </div>
         <form id="upload-img" action="/phpfiles/addFoto.php" method="POST" enctype="multipart/form-data">
+            <?php
+                if(isset($_GET["error"])){
+                    echo '<p style="color:red;">Foto eklenemedi</p>';
+                }
+            ?>
             <input type="file" name="img">
             <input type="file" name="imgFlip">
             <input type="text" name="name" placeholder="Name">
             <input type="text" name="albumName" placeholder="Album Adi">
             <button>Ekle</button>
+            <?php
+                if(isset($_GET["ok"])){
+                    echo '<p style="color:green;">Foto eklendi</p>';
+                }
+            ?>
         </form>
     </main>
 </body>
