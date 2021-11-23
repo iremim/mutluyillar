@@ -1,3 +1,10 @@
 [
-    
+    {
+        "id": 1,
+        "album": "Nerde",
+        "imgUrl": "upload\/81e6f477ac1a393c7632ce382b26315dac384df8.jpg",
+        "name": "Deneme",
+        "imgFlipUrl": "upload\/81e6f477ac1a393c7632ce382b26315dac384df8Flip.jpg",
+        "nameFlip": "DenemeFlip"
+    }
 ]

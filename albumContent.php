@@ -34,11 +34,8 @@ if($_GET["album"]){
                 }
             }
 
-           
-
             require_once "phpfiles/footerAlbumContent.php";
 
-            
         } else{
             require_once "phpfiles/defaultAlbum.php";
         }

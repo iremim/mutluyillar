@@ -56,6 +56,6 @@ $albums = loadJson("phpfiles/albums.json");
             ?>
         </form>
     </main>
-    <script src="scripts/addPic.js"></script>
+    <!-- <script src="scripts/addPic.js"></script> -->
 </body>
 </html>

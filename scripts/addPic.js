@@ -1,9 +1,5 @@
 // "use strict!";
 
-<option value="volvo">Volvo</option>
-
-
-
 // let inputPlace = document.getElementById("inputPlace");
 
 // function createFotoInputs() {

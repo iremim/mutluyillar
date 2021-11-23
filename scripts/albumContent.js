@@ -4,7 +4,6 @@ let fotoPlace = document.querySelector("#fotoPlace");
     
 
     document.querySelector(".changeButton").addEventListener("click", (event)=>{
-        event.stopPropagation();
         document.querySelector(".img").classList.toggle("hide");
         document.querySelector(".imgFlip").classList.toggle("hide");
     });
