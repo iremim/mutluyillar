@@ -11,14 +11,16 @@ function checkTheUser($users, $username, $password){
     return false;
 }
 
-$data = json_decode(file_get_contents("phpfiles/users.json"), true);
-$users = $data["users"];
-
 if(isset($_SESSION["isLoggedIn"])){
     header("Location: index.php");
     exit();
 }
-else{
+
+require_once "phpfiles/functions.php";
+
+$data = loadJson("phpfiles/users.json");
+$users = $data["users"];
+
     if (isset($_POST["username"], $_POST["password"])) {
         $username = strtolower($_POST["username"]);
         $password = strtolower($_POST["password"]);
@@ -28,6 +30,7 @@ else{
             exit();
         } else{
             if(checkTheUser($users, $username, $password)){
+                $_SESSION["isLoggedIn"] = true;
                 header("Location: index.php");
                 exit();
             }else{
@@ -36,7 +39,7 @@ else{
             }
         }
     }
-}
+
 ?>
 <html lang="en">
 <head>
