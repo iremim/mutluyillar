@@ -51,9 +51,9 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
         $newFoto = [
             "id"=> $highestId,
             "album"=>$albumName,
-            "imgUrl"=>"https://hediyapp.herokuapp.com/upload/$uniqueFilename.$ext",
+            "imgUrl"=>"upload/$uniqueFilename.$ext",
             "name"=> $imgName,
-            "imgFlipUrl"=> "https://hediyapp.herokuapp.com/upload/$uniqueFilename"."Flip.$ext",
+            "imgFlipUrl"=> "upload/$uniqueFilename"."Flip.$ext",
             "nameFlip" => $imgName."Flip",
         ];
 
@@ -68,6 +68,9 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
           exit();
         }
       
+} else{
+    header("Location: ../addPic.php?error=eksik");
+    exit();
 }
 
 ?>

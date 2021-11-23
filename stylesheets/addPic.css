@@ -34,7 +34,7 @@ main {
 	align-items: center;
 	border: 1px solid honeydew;
 	height: 40vw;
-	width: 40vw;
+	width: 85vh;
 	flex-direction: column;
 	border-radius: 10px;
 	background-color: black;
@@ -98,7 +98,7 @@ button {
 		align-items: center;
 		border: 1px solid honeydew;
 		height: 50vh;
-		width: auto;
+		width: 85vw;
 		flex-direction: column;
 		border-radius: 10px;
 		background-color: black;

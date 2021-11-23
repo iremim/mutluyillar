@@ -35,7 +35,11 @@ $albums = loadJson("phpfiles/albums.json");
             </div>
             <?php
                 if(isset($_GET["error"])){
-                    echo '<p style="color:red;">Foto eklenemedi</p>';
+                    if($_GET["error"] == "eksik"){
+                        echo '<p style="color:red; margin:0;">Bisey unuttun!!</p>';
+                    }else{
+                        echo '<p style="color:red; margin:0;">Foto eklenemedi!</p>';
+                    } 
                 }
             ?>
             <input type="file" name="img">
@@ -51,7 +55,7 @@ $albums = loadJson("phpfiles/albums.json");
             <button>Ekle</button>
             <?php
                 if(isset($_GET["ok"])){
-                    echo '<p style="color:green;">Foto eklendi</p>';
+                    echo '<p style="color:green; margin:0;">Foto eklendi</p>';
                 }
             ?>
         </form>
