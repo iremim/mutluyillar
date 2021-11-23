@@ -15,21 +15,15 @@ function getAlbumsPicture($album, $albums, $addedFotos){
 
     $picturesOfChosenAlbum = [];
 
-    foreach($albums as $album){
-        if($album["albumName"] == $album){
+    foreach($albums as $alb){
+        if($alb["albumName"] == $album){
             foreach($addedFotos as $picture){
-                if($album["albumName"] == $picture["album"]){
+                if($album == $picture["album"]){
                     $picturesOfChosenAlbum[] = $picture;
                 }
             }
         }
     }
-
-    if($picturesOfChosenAlbum){
-        return $picturesOfChosenAlbum;
-    }else{
-        return false;
-    }
-
+    return $picturesOfChosenAlbum;
 }
 ?>

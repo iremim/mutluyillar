@@ -63,19 +63,19 @@ if(isset($_POST["albumName"])){
         <a href="fotoGram.php"><i class="material-icons" style="font-size:24px;color: white;">collections</i></a>
     </div>
     <main>
-        <div id="title">
-            <h1 style="font-family: 'Cuprum', sans-serif;">Yeni Album</h1>
-        </div>
         <form id="newAlbum" action="newAlbum.php" method="POST">
+            <div id="title">
+                <h1 style="font-family:'Kaushan Script', cursive;">Yeni Album</h1>
+            </div>
         <?php
                 if(isset($_GET["error"])){
-                    echo '<p style="color:red;">Album adi kullanilmakta!</p>';
+                    echo '<p style="color:red; margin:0;">Album adi kullanilmakta!</p>';
                 }
             ?>
             <input type="text" name="albumName" placeholder="Album Adi">
             <?php
                 if(isset($_GET["ok"])){
-                    echo '<p style="color:green;">Album olusturuldu!</p>';
+                    echo '<p style="color:green; margin:0;">Album olusturuldu!</p>';
                 }
             ?>
             <button>Olustur</button>

@@ -2,17 +2,9 @@
     {
         "id": 1,
         "album": "eglence",
-        "imgUrl": "https:\/\/hediyapp.herokuapp.com\/upload\/50219f7e69db39d1425ead93d550068632fefc77.jpg",
+        "imgUrl": "aYear\/cay.jpg",
         "name": "sdasd",
-        "imgFlipUrl": "https:\/\/hediyapp.herokuapp.com\/upload\/50219f7e69db39d1425ead93d550068632fefc77Flip.jpg",
+        "imgFlipUrl": "aYear\/cayFlip.jpg",
         "nameFlip": "sdasdFlip"
-    },
-    {
-        "id": 2,
-        "album": "eglence",
-        "imgUrl": "https:\/\/hediyapp.herokuapp.com\/upload\/407eb81f8f757a3a36ad4f31ad3c44c8211f7400.jpg",
-        "name": "eglence",
-        "imgFlipUrl": "https:\/\/hediyapp.herokuapp.com\/upload\/407eb81f8f757a3a36ad4f31ad3c44c8211f7400Flip.jpg",
-        "nameFlip": "eglenceFlip"
     }
 ]

@@ -5,6 +5,10 @@ if(!isset($_SESSION["isLoggedIn"])){
     header("Location: login.php");
     exit();
 }
+
+require_once "phpfiles/functions.php";
+$albums = loadJson("phpfiles/albums.json");
+
 ?>
 <html lang="en">
 <head>
@@ -25,10 +29,10 @@ if(!isset($_SESSION["isLoggedIn"])){
         <a href="fotoGram.php"><i class="material-icons" style="font-size:24px;color: white;">collections</i></a>
     </div>
     <main>
-        <div id="title">
-            <h1 style="font-family: 'Cuprum', sans-serif;">Albume Ekle</h1>
-        </div>
         <form id="upload-img" action="/phpfiles/addFoto.php" method="POST" enctype="multipart/form-data">
+            <div id="title">
+                <h1 style="font-family:'Kaushan Script', cursive;">Foto Ekle</h1>
+            </div>
             <?php
                 if(isset($_GET["error"])){
                     echo '<p style="color:red;">Foto eklenemedi</p>';
@@ -36,8 +40,14 @@ if(!isset($_SESSION["isLoggedIn"])){
             ?>
             <input type="file" name="img">
             <input type="file" name="imgFlip">
-            <input type="text" name="name" placeholder="Name">
-            <input type="text" name="albumName" placeholder="Album Adi">
+            <input type="text" name="name" placeholder="Konu / Tarih">
+            <select id="Album" name="albumName">    
+                <?php
+                    foreach($albums as $album){
+                        echo "<option value=".$album["albumName"].">".$album["albumName"]."</option>";
+                    }
+                ?>
+            </select>
             <button>Ekle</button>
             <?php
                 if(isset($_GET["ok"])){
@@ -46,5 +56,6 @@ if(!isset($_SESSION["isLoggedIn"])){
             ?>
         </form>
     </main>
+    <script src="scripts/addPic.js"></script>
 </body>
 </html>
