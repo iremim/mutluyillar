@@ -1,3 +1,18 @@
 [
-    
+    {
+        "id": 1,
+        "album": "sidika",
+        "imgUrl": "upload\/50219f7e69db39d1425ead93d550068632fefc77.jpg",
+        "name": "sdasd",
+        "imgFlipUrl": "upload\/50219f7e69db39d1425ead93d550068632fefc77Flip.jpg",
+        "nameFlip": "sdasdFlip"
+    },
+    {
+        "id": 2,
+        "album": "sidika",
+        "imgUrl": "upload\/2cdd4c1add11499bbdf36fded91e677d8caf516a.jpg",
+        "name": "asd1",
+        "imgFlipUrl": "upload\/2cdd4c1add11499bbdf36fded91e677d8caf516aFlip.jpg",
+        "nameFlip": "asd1Flip"
+    }
 ]

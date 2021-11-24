@@ -26,22 +26,22 @@ main {
 }
 #fotoPlace {
 	display: flex;
-	gap: 5px;
+	gap: 10px;
 	position: relative;
-    overflow-x: scroll;
+	overflow-x: scroll;
 }
 .albumBox {
 	background-image: url("../backgroundPics/AlbumKapakFoto.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 25vh;
-	width: 75vw;
+	height: 65vh;
+	min-width: 42vw;
 	border-radius: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    text-align: right;
+	text-align: right;
 }
 .albumBox > a {
 	text-decoration: none;
@@ -77,11 +77,11 @@ main {
         height: 90vh;
         width: 90vw;
         position: relative;
-        overflow-y: scroll;
 
         display: flex;
         justify-content: center;
         margin-top: 3vh;
+        overflow-y: scroll;
     }
     #titleBox {
         display: flex;
@@ -104,8 +104,11 @@ main {
         display: grid;
         gap: 25px;
         position: relative;
-        overflow-x: scroll;
         grid-template-columns: 1fr;
+        grid-template-rows: unset;
+        width: unset;
+        height: unset;
+        overflow: unset;
     }
     .albumBox {
         background-image: url("../backgroundPics/AlbumKapakFoto.jpg");

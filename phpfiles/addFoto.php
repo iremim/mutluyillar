@@ -14,7 +14,7 @@ $fotos = loadJson("addedFotos.json");
 
 $highestId = 0;
 
-if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && isset($_POST["albumName"]) && isset($_POST["name"])){
+if($method == "POST" && !empty($_FILES["img"]) && !empty($_FILES["imgFlip"]) && !empty($_POST["albumName"]) && !empty($_POST["name"])){
     $imgName = $_POST["name"];
     $albumName = $_POST["albumName"];
 

@@ -115,14 +115,15 @@ div.bigger {
 	align-items: center;
 	text-align: right;
 }
-#NewPic {
-	height: 25vh;
-	width: 100%;
+#newPic {
+	height: 77vh;
+	width: 60vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
-	opacity: 12.5%;
+	opacity: 40%;
+	border: 1px solid white;
 	border-radius: 20px;
 }
 .picBox > a {
@@ -146,7 +147,8 @@ div.bigger {
     body{
         display: flex;
         align-items: center;
-        background-image: url("../backgroundPics/newYear.jpg");
+        background-image: url("../backgroundPics/birthalbumContentBack.jpg");
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
@@ -253,6 +255,16 @@ div.bigger {
     }
     .moreFrontier{
         font-size: 30px;
+    }
+    #NewPic {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        opacity: 40%;
+        border-radius: 20px;
     }
     .hide{
         display: none;
