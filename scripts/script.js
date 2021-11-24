@@ -47,6 +47,7 @@ function setNextQuestion(questions = shuffliedQuestions[currentQuestionIndex]){
     let pictureContainer = document.getElementById("pictureContainer");
 
     playground.classList.remove("playArea");
+    playground.classList.add("playG");
 
     clearTheAnswerfield();
     
