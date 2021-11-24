@@ -85,10 +85,16 @@ div.big{
     font-size: 25px;
     transition: all 1s ease;
 }
-div.bigger {
+/* div.bigger {
     height: 90vh;
     width: 45vw;
     transition: all 1s ease;
+} */
+div.bigger {
+	height: 85vh;
+	width: 45vw;
+	transition: all 1s ease;
+	overflow: scroll;
 }
 #fotoPlace.biggerFotoPlace {
 	gap: 0px;
@@ -97,8 +103,9 @@ div.bigger {
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
-	height: 100%;
+	/* height: 100%; */
 	align-items: center;
+	/* width: 100%; */
 }
 .moreFrontier{
 	position: relative;
