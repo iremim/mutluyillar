@@ -57,7 +57,7 @@ $albums = loadJson("phpfiles/albums.json");
                     }
                 ?>
             </select>
-            <button>Ekle</button>
+            <button type="submit">Ekle</button>
         </form>
     </main>
 </body>
