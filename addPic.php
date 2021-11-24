@@ -47,19 +47,18 @@ $albums = loadJson("phpfiles/albums.json");
             <input id="inputLast" type="text" name="name" placeholder="Konu / Tarih">
             <select id="albumSelect" name="albumName">    
                 <?php
-                    foreach($albums as $album){
-                        echo "<option value=".$album["albumName"].">".$album["albumName"]."</option>";
+                    if(isset($_GET["comingFrom"])){
+                        $adressToSend = $_GET["comingFrom"];
+                        echo "<option value=".$adressToSend.">".$adressToSend."</option>";
+                    }else{
+                        foreach($albums as $album){
+                            echo "<option value=".$album["albumName"].">".$album["albumName"]."</option>";
+                        }
                     }
                 ?>
             </select>
             <button>Ekle</button>
-            <?php
-                if(isset($_GET["ok"])){
-                    echo '<p style="color:green; margin:0;">Foto eklendi</p>';
-                }
-            ?>
         </form>
     </main>
-    <!-- <script src="scripts/addPic.js"></script> -->
 </body>
 </html>

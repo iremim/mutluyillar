@@ -106,6 +106,33 @@ div.bigger {
 	top: 57vh;
 	font-size: 30px;
 }
+.picBox {
+	height: 25vh;
+	width: 75vw;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+}
+#NewPic {
+	height: 25vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	opacity: 12.5%;
+	border-radius: 20px;
+}
+.picBox > a {
+	text-decoration: none;
+	font-family: 'Marck Script', cursive;
+	font-size: 35px;
+	width: 80%;
+	max-width: 70%;
+	max-height: 80%;
+}
 .hide{
     display: none;
 }

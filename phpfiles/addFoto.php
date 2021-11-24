@@ -61,7 +61,7 @@ if($method == "POST" && isset($_FILES["img"]) && isset($_FILES["imgFlip"]) && is
       $saved = saveJson("addedFotos.json", $fotos);
 
         if($saved){
-          header("Location: ../addPic.php?ok=true");
+          header("Location: ../albumContent.php?album=$albumName");
           exit();
         }else{
           header("Location: ../addPic.php?error=true");

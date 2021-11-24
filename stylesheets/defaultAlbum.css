@@ -3,7 +3,7 @@ body {
 	display: flex;
 	align-items: center;
     background-image: url("../backgroundPics/mutluyillar.jpeg");
-	background-size: 100vw;
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100vh;
 	overflow: hidden;
@@ -14,13 +14,15 @@ body {
 #titleBox {
     display: none;
 }
-main{
-	height: auto;
+main {
+	height: 100vh;
 	width: 90vw;
-    position: relative;
-    transition: all 1s ease;
+	position: relative;
+	transition: all 1s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
 #title{
     text-align: center;
     color: white;
@@ -85,13 +87,8 @@ div.big{
     font-size: 25px;
     transition: all 1s ease;
 }
-/* div.bigger {
-    height: 90vh;
-    width: 45vw;
-    transition: all 1s ease;
-} */
 div.bigger {
-	height: 85vh;
+	height: 90vh;
 	width: 45vw;
 	transition: all 1s ease;
 	overflow: scroll;
@@ -155,6 +152,7 @@ div.bigger {
         width: 90vw;
         position: relative;
         overflow-y: scroll;
+        display: unset;
     }
     
     #title{

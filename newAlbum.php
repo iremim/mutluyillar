@@ -34,7 +34,7 @@ if(isset($_POST["albumName"])){
     if($available){
         array_push($albums, $newAlbum);
         saveJson("phpfiles/albums.json", $albums);
-        header("Location: newAlbum.php?ok=true");
+        header("Location: albumContent.php?album=$nameOfNewAlbum");
         exit();
     }else{
         header("Location: newAlbum.php?error=true");
@@ -73,11 +73,6 @@ if(isset($_POST["albumName"])){
                 }
             ?>
             <input type="text" name="albumName" placeholder="Album Adi">
-            <?php
-                if(isset($_GET["ok"])){
-                    echo '<p style="color:green; margin:0;">Album olusturuldu!</p>';
-                }
-            ?>
             <button>Olustur</button>
         </form>
     </main>
