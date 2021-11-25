@@ -47,7 +47,7 @@ if($method == "POST" && !empty($_FILES["img"]) && !empty($_FILES["imgFlip"]) && 
       move_uploaded_file($tempname, "../upload/$uniqueFilename.$ext");
       move_uploaded_file($fliptempname, "../upload/$uniqueFilename"."Flip.$ext");
 
-    
+      
         $newFoto = [
             "id"=> $highestId,
             "album"=>$albumName,

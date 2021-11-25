@@ -10,30 +10,13 @@ body{
     background-image: url("../backgroundPics/backQuiz.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-position: center;
     height: 100vh;
 	overflow-y: hidden;
 	overflow-x: hidden;
 };
-#playGround.playArea {
-	width: 90vw;
-	text-align: center;
-	color: black;
-	height: fit-content;
-	max-height: unset;
-	box-shadow: 5px 10px 40px black;
-	border-radius: 56px;
-	padding: 2px;
-	overflow: scroll;
-	background-color: aliceblue;
-	min-height: 75vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+
 #playGround.playG {
-	overflow-y: hidden;
-	overflow-x: hidden;
-	position: relative;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -47,7 +30,30 @@ body{
 	width: 90vw;
 	min-height: 70vh;
 	justify-content: center;
-	/* margin: auto; */
+	margin: auto;
+}
+#playGround {
+		background-color: aliceblue;
+		width: 85vw;
+
+		border: 1px solid red;
+		padding: 10px;
+		box-shadow: 5px 10px 18px red;
+		border-radius: 25px;
+}
+#playGround.playArea {
+	text-align: center;
+	background-color: unset;
+	color: black;
+	height: 65vh;
+	max-height: unset;
+	box-shadow: 5px 10px 40px red;
+	border: 1px solid red;
+	border-radius: 60px;
+	padding: 2px;
+	margin: auto;
+	overflow-y: scroll;
+	width: 85vw;
 }
 #playGround h2 {
 	margin: 0;
@@ -145,7 +151,7 @@ body{
 	min-width: 20vw;
 
 	border: none;
-	background-color:lightskyblue;
+	background-color: rgba(194, 11, 11, 0.507);
 
 	font-size: 15px;
 	display: flex;
@@ -155,8 +161,8 @@ body{
 	border-radius: 10px;
 }
 .selectedOpt {
-	background-color: black;
-	color: honeydew;
+	background-color: red;
+	color: white;
 	font-weight: bold;
 }
 
@@ -172,8 +178,8 @@ body{
 }
 
 .navigateButtons button {
-	background-color: black;
-	color: lightskyblue;
+	background-color: white;
+	color: red;
 	font-size: 20px;
 	border-radius: 100%;
 
@@ -202,7 +208,7 @@ body{
 	}
 	body {
 		align-items: center;
-		background-image: url("../backgroundPics/kapadokya.jpg");
+		background-image: url("../backgroundPics/valentine5.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		height: 100vh;
@@ -251,7 +257,7 @@ body{
 		justify-content: center;
 		align-items: center;
 		margin-top: 20;
-		border: 1px solid white;
+		border: 1px solid red;
 	}
 	#pictureContainer {   
 		width: 95%;
@@ -274,7 +280,7 @@ body{
 	}
 	.answer{
 		border: none;
-		background-color: lightskyblue;
+		background-color: rgba(194, 11, 11, 0.507);
 		font-size: 15px;
 		display: flex;
 		justify-content: center;
@@ -287,20 +293,19 @@ body{
 		width: auto;
 	}
 	.selectedOpt {
-		background-color: black;
-		color: honeydew;
+		background-color: red;
+		color: white;
 		font-weight: bold;
 	}
-	.playArea {
+	#playGround.playArea {
 		width: 85vw;
 		text-align: center;
 		background-color: unset;
 		color: white;
 		height: 65vh;
-
 		max-height: unset;
-		box-shadow: 5px 10px 40px red;
-		border: 1px solid red;
+		box-shadow: 5px 10px 40px white;
+		border: 1px solid white;
 		border-radius: 60px;
 		padding: 2px;
 		margin: auto;
@@ -309,10 +314,16 @@ body{
 		border: 1px solid red;
 		border-radius: 5px;
 		box-shadow: 5px 10px 18px red;
-		width: 84vw;
+		background-color: aliceblue;
+		width: 85vw;
 		height: auto;
 		min-height: unset;
-		margin: auto;
+		margin: unset;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		text-align: center;
 	}
   }
 

@@ -43,13 +43,30 @@ main {
 	align-items: center;
 	text-align: right;
 }
-.albumBox > a {
+.albumBox > a:last-child {
 	text-decoration: none;
 	font-family: 'Marck Script', cursive;
 	font-size: 35px;
 	width: 80%;
 	max-width: 70%;
 	max-height: 80%;
+}
+#deleteAlbumButton {
+    text-decoration: none;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    border-radius: 100%;
+    font-size: 20px;
+    position: relative;
+    bottom: 43%;
+
+    right: 10%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .hide{
     display: none;
@@ -122,7 +139,24 @@ main {
         justify-content: center;
         align-items: center;
     }
-    .albumBox > a {
+    #deleteAlbumButton {
+        text-decoration: none;
+        border: 1px solid white;
+        background: black;
+        color: white;
+        border-radius: 100%;
+        font-size: 20px;
+        position: relative;
+        bottom: 41%;
+
+        right: 9%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+    .albumBox > a:last-child {
         text-decoration: none;
         font-family: 'Marck Script', cursive;
         font-size: 35px;

@@ -125,7 +125,7 @@ div.bigger {
     body{
         display: flex;
         align-items: center;
-        background-image: url("../backgroundPics/newYear.jpg");
+        background-image: url("../backgroundPics/defaultAlbumBack.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
@@ -154,7 +154,6 @@ div.bigger {
         overflow-y: scroll;
         display: unset;
     }
-    
     #title{
         text-align: center;
         color: white;

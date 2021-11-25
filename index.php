@@ -30,18 +30,18 @@ if(!isset($_SESSION["isLoggedIn"])){
     </div>
     <div id="playGround" class="playArea">
         <div id="firstDiv">
-            <h2>Mutlu Yıllar Sevgilim <i id="heart" class='far fa-heart' style='font-size:34px;color:red; margin-left: 6.8px;'></i></h2>
+            <h2>Mutlu Yıllar Sevgilim <i id="heart" class='far fa-heart' style='font-size:34px;color:white; margin-left: 6.8px;'></i></h2>
         </div>
         <div id="secondDiv" style="padding: 10px; height: 160px; position: relative; text-align: justify;">
-            <p>Bugün sevgili karımın doğum günü, bu yüzden onu mutlu etmek için bu küçük sayfayı yaptım.
+            <p>Bugün sevgili karımın doğum günü, bu yüzden onu mutlu etmek için bu küçük uygulamayi yaptım.
                 Umarım seninle geçireceğimiz daha çok doğum günleri olur canım. 
                 Ne dün ne yarın, insan hayatındaki en önemli an şu anıdır.  
-                Onun  için her zaman her anımda olmanı istiyorum. <i class='fas fa-kiss-wink-heart' style='font-size:20px; color:black;'></i></p>
+                Onun  için her zaman her anımda olmanı istiyorum. <i class='fas fa-kiss-wink-heart' style='font-size:20px; color:white;'></i></p>
                
                 <p>Simdi seninle birlikte bi oyun oynayacagiz. 
                     Bu oyunu eger 75% basari oraniyla bitirebilirsen 
                     istedigin herhangi bi seyi kayitsiz sartsiz yerine 
-                    getirecegim! Ne dilersen ...<i class='fas fa-kiss-wink-heart' style='font-size:20px; color:black;'></i></p>
+                    getirecegim! Ne dilersen ...<i class='fas fa-kiss-wink-heart' style='font-size:20px; color:white;'></i></p>
                     <p>Oyun toplamda 10 sorudan olusmakta ve her soru da sadece tek bir cevap 10 poan degerinde!</p>
                     
                     <p style="text-align: center;"><span style='font-size:20px;'>&#8595;</span> Baslamak icin <span style='font-size:20px;'>&#8595;</span></p>

@@ -20,6 +20,7 @@ if(!isset($_SESSION["isLoggedIn"])){
         
         foreach($albums as $album){ 
         echo "<div class="."albumBox".">
+            <a id='deleteAlbumButton' href='phpfiles/deleteAlbum.php?album=".$album["albumName"]."'>X</a>
             <a href="."albumContent.php?album=".$album["albumName"].">".
             $album["albumName"]
             ."</a></div>";
