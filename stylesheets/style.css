@@ -39,6 +39,9 @@ body{
 		padding: 10px;
 		box-shadow: 5px 10px 18px red;
 		border-radius: 25px;
+		height: 60vh;
+		max-height: 60vh;
+		text-align: center;
 }
 #playGround.playArea {
 	text-align: center;
@@ -112,7 +115,7 @@ body{
 }
 #pictureContainer > img {   
 	max-width: 94%;
-	max-height: 80vh;
+	max-height: 60vh;
 }
 
 /* QUESTIONPARENT  */
@@ -233,7 +236,7 @@ body{
 	.container {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		/* justify-content: space-evenly; */
 		align-items: center;
 	}
 	.questionsContainer {
@@ -266,6 +269,7 @@ body{
 	}
 	#pictureContainer > img {   
 		width: 100%;
+		max-height: 80vh;
 	}
 	.questionsContainer > div:first-child {
 		text-align: center;
@@ -298,33 +302,36 @@ body{
 		font-weight: bold;
 	}
 	#playGround.playArea {
-		width: 85vw;
-		text-align: center;
-		background-color: unset;
+		/* width: 85vw; */
+		/* text-align: center; */
+		/* background-color: unset; */
 		color: white;
-		height: 65vh;
-		max-height: unset;
+		/* height: 65vh; */
+		/* max-height: unset; */
 		box-shadow: 5px 10px 40px white;
 		border: 1px solid white;
-		border-radius: 60px;
-		padding: 2px;
+		/* border-radius: 60px; */
+		/* padding: 2px; */
 		/* margin: auto; */
 		margin-top: 30px;
 	}
 	#playGround.playG {
-		border: 1px solid red;
+		/* border: 1px solid red; */
 		border-radius: 5px;
-		box-shadow: 5px 10px 18px red;
+		/* box-shadow: 5px 10px 18px red;
 		background-color: aliceblue;
 		width: 85vw;
-		height: auto;
+		
 		min-height: unset;
 		margin: unset;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding: 10px;
-		text-align: center;
+		text-align: center; */
+		height: auto;
+		max-height: 80vh;
+		overflow-y: scroll;
 	}
   }
 
