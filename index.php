@@ -28,6 +28,7 @@ if(!isset($_SESSION["isLoggedIn"])){
         <h1 style="font-family:'Kaushan Script', cursive; font-size:25px; width: 34vh;text-align: center;"><a href="logout.php" style="text-decoration: none;color: white;">HediyApp</a></h1>
         <a href="addPic.php"><i class="fa fa-plus" style="font-size:24px; color: white;"></i></a>
     </div>
+    
     <div id="playGround" class="playArea">
         <div id="firstDiv">
             <h2>Mutlu Yıllar Sevgilim <i id="heart" class='far fa-heart' style='font-size:34px;color:white; margin-left: 6.8px;'></i></h2>

@@ -1,4 +1,5 @@
-{"users" : [
+{
+    "users" : [
     {
         "id": 1,
         "username": "irem",
@@ -6,8 +7,8 @@
     },
     {
         "id": 2,
-        "username": "Kaan",
-        "password": "Kaan"
+        "username": "kaan",
+        "password": "kaan"
     }
-]
+    ]
 }

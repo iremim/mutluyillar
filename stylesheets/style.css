@@ -5,6 +5,7 @@ body{
     display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
     margin: 0;
 
     background-image: url("../backgroundPics/backQuiz.jpg");
@@ -14,7 +15,6 @@ body{
     height: 100vh;
 	overflow: hidden;
 };
-
 #playGround.playG {
 	display: flex;
 	align-items: center;
@@ -215,7 +215,6 @@ body{
 		background-size: cover;
 		background-repeat: no-repeat;
 
-		flex-direction: column;
 		justify-content: flex-start;
 	}
 	#titleBox {

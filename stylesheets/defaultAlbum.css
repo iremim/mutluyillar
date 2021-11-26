@@ -29,7 +29,7 @@ main {
 }
 #fotoPlace {
 	display: flex;
-	gap: 5px;
+	/* gap: 5px; */
 	position: relative;
     overflow-x: scroll;
 }
@@ -42,7 +42,10 @@ main {
 	transition: all 1s ease;
 	height: auto;
 	font-size: auto;
-	left: 0;
+	margin-left: -100;
+}
+.mainBox:first-child{
+    margin-left: 0;
 }
 .imgBox {
 	position: relative;
@@ -86,15 +89,13 @@ div.big{
     height: 100%;
     font-size: 25px;
     transition: all 1s ease;
+    margin-left: unset;
 }
 div.bigger {
 	height: 90vh;
 	width: 45vw;
 	transition: all 1s ease;
 	overflow: scroll;
-	justify-content: center;
-	align-items: center;
-	display: flex;
 }
 #fotoPlace.biggerFotoPlace {
 	gap: 0px;
@@ -119,8 +120,8 @@ div.bigger {
 	opacity: 0%;
 	width: 0;
 	left: -100%;
+    margin-left: unset;
 }
-
 @media only screen and (max-width: 600px) {
     body{
         display: flex;
@@ -172,6 +173,7 @@ div.bigger {
         flex-direction: column;
         height: auto;
         font-size: auto;
+        margin-left: unset;
     }
     .imgBox {
         position: relative;
@@ -236,5 +238,4 @@ div.bigger {
     .hide{
         display: none;
     }
-    
 }
