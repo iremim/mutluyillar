@@ -34,5 +34,4 @@ if(!isset($_SESSION["isLoggedIn"])){
                     
     require_once "phpfiles/footerFotoGram.php";
 
-
 ?>
