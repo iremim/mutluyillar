@@ -1,7 +1,6 @@
 "use strict";
 
 let fotoPlace = document.querySelector("#fotoPlace");
-    console.log(document);
 
     let changeButtons = document.querySelectorAll(".changeButton");
 
