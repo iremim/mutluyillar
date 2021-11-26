@@ -65,7 +65,7 @@ main {
 }
 .underText {
 	position: absolute;
-	color: white;
+	color: honeydew;
 	bottom: 0;
     font-family: 'Kaushan Script', cursive;
 }
@@ -86,7 +86,7 @@ main {
 	animation: w3-spin 7s infinite linear;
 }
 div.big{
-    height: 100%;
+    height: fit-content;
     font-size: 25px;
     transition: all 1s ease;
     margin-left: unset;
@@ -191,12 +191,6 @@ div.bigger {
         width: 100%;
         position: relative;
     }
-    .underText {
-        position: absolute;
-        color: white;
-        bottom: 0;
-        font-family: 'Kaushan Script', cursive;
-    }
     .changeButton {
         position: absolute;
         top: 5%;
@@ -222,10 +216,6 @@ div.bigger {
         justify-content: center;
         align-items: center;
         height: 100vh;
-    }
-    div.big{
-        height: 60vh;
-        font-size: 25px;
     }
     div.bigger {
         height: 51vh;
