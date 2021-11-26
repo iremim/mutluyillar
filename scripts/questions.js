@@ -46,7 +46,7 @@ const quests = [
     {
         id:5,
         question: "Burda evet dendi okey, tamam ama tekrar sorsalar cevabin ne olurdu?",
-        img:"qPics/sizcecevapne.png",
+        img:"qPics/sizcecevapne.jpg",
         answers: [
             {value: 7, option: "Evet!"},
             {value: 3, option: "Yok almayim!"},
