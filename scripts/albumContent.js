@@ -2,6 +2,16 @@
 
 let fotoPlace = document.querySelector("#fotoPlace");
 
+let deleteButtons = document.querySelectorAll(".deletePicButton");
+
+deleteButtons.forEach(button => {
+    button.addEventListener("click", (e)=>{
+        e.stopPropagation();
+    })
+})
+
+
+
     let changeButtons = document.querySelectorAll(".changeButton");
 
     changeButtons.forEach(changeButton => {

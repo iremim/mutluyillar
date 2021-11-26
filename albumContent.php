@@ -49,7 +49,7 @@ if($_GET["album"]){
                 foreach(getAlbumsPicture($album, $albums,$addedFotos) as $pic){
                     echo "
                         <div class='mainBox' id=".$pic["id"].">
-                            <div class="."imgBox"."><a id='deletePicButton' href='phpfiles/deletePic.php?id=".$pic["id"]."&album=".$album."'>X</a>
+                            <div class="."imgBox"."><a class='deletePicButton' href='phpfiles/deletePic.php?id=".$pic["id"]."&album=".$album."'>X</a>
                                 <i class='w3-jumbo w3-spin fa fa-refresh changeButton'>
                                 </i><img class='img' src='".$pic["imgUrl"]."'>
                                 <img class='imgFlip hide' src='".$pic["imgFlipUrl"]."'>

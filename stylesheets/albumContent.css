@@ -52,6 +52,23 @@ main{
 	border-radius: 20px;
     width: 60vh;
 }
+.deletePicButton {
+    text-decoration: none;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    border-radius: 100%;
+    font-size: 12px;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5.3%;
+    z-index: 2;
+    right: 6.5%;
+}
 .img{
     width: 100%;
     position: relative;
@@ -234,7 +251,7 @@ div.bigger {
     .w3-spin {
         animation: w3-spin 7s infinite linear;
     }
-    #deletePicButton {
+    .deletePicButton {
         text-decoration: none;
         border: 1px solid white;
         background: black;
