@@ -107,8 +107,15 @@ div.big{
 div.bigger {
     height: 90vh;
     width: 45vw;
+
+    overflow: scroll;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+
     transition: all 1s ease;
 }
+
 #fotoPlace.biggerFotoPlace {
 	gap: 0px;
 	margin: 0px;
