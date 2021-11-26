@@ -12,8 +12,7 @@ body{
 	background-repeat: no-repeat;
 	background-position: center;
     height: 100vh;
-	overflow-y: hidden;
-	overflow-x: hidden;
+	overflow: hidden;
 };
 
 #playGround.playG {
@@ -185,10 +184,12 @@ body{
 	color: red;
 	font-size: 20px;
 	border-radius: 100%;
+	border: 1px solid red;
 
 	height: 50px;
 	width: 50px;
 
+	display: flex;
 	justify-content: center;
 	align-items: center;
 
@@ -214,11 +215,10 @@ body{
 		background-image: url("../backgroundPics/valentine5.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
-		height: 100vh;
-		overflow: hidden;
+
 		flex-direction: column;
 		justify-content: flex-start;
-		width: 100vw;
+
 	}
 	#titleBox {
 		display: flex;
@@ -236,8 +236,10 @@ body{
 	.container {
 		display: flex;
 		flex-direction: column;
-		/* justify-content: space-evenly; */
+		justify-content: unset;
 		align-items: center;
+		
+		height: fit-content;
 	}
 	.questionsContainer {
 		display: flex;
@@ -260,7 +262,6 @@ body{
 		justify-content: center;
 		align-items: center;
 		margin-top: 20;
-		border: 1px solid red;
 	}
 	#pictureContainer {   
 		width: 95%;
@@ -329,8 +330,8 @@ body{
 		align-items: center;
 		padding: 10px;
 		text-align: center; */
-		height: auto;
-		max-height: 80vh;
+		height: fit-content;
+		max-height: fit-content;
 		overflow-y: scroll;
 	}
   }
