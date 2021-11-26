@@ -123,7 +123,7 @@ const quests = [
     {
         id:12,
         question: "Bu uyuyan guzeli nasil uyandirmali?",
-        img:"qPics/nasiluyandirirsin.JPG",
+        img:"qPics/nasiluyandirirsin.jpg",
         answers: [
             {value: 6, option: "Bi kova suyla"},
             {value: 5, option: "Durterek"},

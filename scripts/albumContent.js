@@ -11,7 +11,6 @@ deleteButtons.forEach(button => {
 })
 
 
-
     let changeButtons = document.querySelectorAll(".changeButton");
 
     changeButtons.forEach(changeButton => {
