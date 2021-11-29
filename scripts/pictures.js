@@ -1,20 +1,20 @@
 const pics = [
     {
         id:1,
-        pic : "aYear/teleferik.jpg",
-        flip : "aYear/teleferikFlip.jpg",
+        pic : "https://hediyapp.herokuapp.com/aYear/teleferik.jpg",
+        flip : "https://hediyapp.herokuapp.com/aYear/teleferikFlip.jpg",
         date:"1 Agustos",
     },
     {
         id:2,
-        pic : "aYear/cay.jpg",
-        flip : "aYear/cayFlip.jpg",
+        pic : "https://hediyapp.herokuapp.com/aYear/cay.jpg",
+        flip : "https://hediyapp.herokuapp.com/aYear/cayFlip.jpg",
         date:"1 Agustos",
     },
     {
         id:3,
-        pic : "aYear/havuz.jpg",
-        flip : "aYear/havuzFlip.jpg",
+        pic : "https://hediyapp.herokuapp.com/aYear/havuz.jpg",
+        flip : "https://hediyapp.herokuapp.com/aYear/havuzFlip.jpg",
         date:"31 Temmuz",
     },
     {
