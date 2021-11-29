@@ -140,7 +140,7 @@ nextButton.addEventListener("click", ()=>{
             nextButton.style.display ="none";
     
             pictureContainer.innerHTML =`
-            <img src="qPics/tebrikler.jpeg">
+            <img src="qPics/tebrikler.jpg">
             `;
     
             document.querySelector(".question").innerHTML = `
