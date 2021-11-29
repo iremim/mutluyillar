@@ -30,7 +30,6 @@ start.addEventListener("click", ()=>{
 });
 
 
-
 function startTheGame() {
     document.querySelector(".container").classList.remove("hide");
     //Sorterar questions arrayen slumpmässig

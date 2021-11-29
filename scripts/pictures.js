@@ -59,4 +59,40 @@ const pics = [
         flip : "aYear/manzaraFlip.jpg",
         date:"1 Agustos",
     },
+    {
+        id:11,
+        pic : "aYear/kapadokya.jpg",
+        flip : "aYear/kapadokyaFlip.jpg",
+        date:"26 Ekim",
+    },
+    {
+        id:12,
+        pic : "aYear/gelDamat.jpg",
+        flip : "aYear/gelDamatFlip.jpg",
+        date:"27 Temmuz",
+    },
+    {
+        id:13,
+        pic : "aYear/araba.jpg",
+        flip : "aYear/arabaFlip.jpg",
+        date:"27 temmuz",
+    },
+    {
+        id:14,
+        pic : "aYear/ulus.jpg",
+        flip : "aYear/ulusFlip.jpg",
+        date:"30 Haziran",
+    },
+    {
+        id:15,
+        pic : "aYear/maske.jpg",
+        flip : "aYear/maskeFlip.jpg",
+        date:"16 Haziran",
+    },
+    {
+        id:16,
+        pic : "aYear/cafe.jpg",
+        flip : "aYear/cafeFlip.jpg",
+        date:"5 Nisan",
+    },
 ]

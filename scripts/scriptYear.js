@@ -3,6 +3,8 @@
 localStorage.setItem("fotolar", JSON.stringify(pics));
 const pictures = JSON.parse(localStorage.getItem("fotolar"));
 
+let shuffliedpictures = pictures.sort(() => Math.random() - .5);
+
 let fotoPlace = document.querySelector("#fotoPlace");
 
 function createPics(picture){
@@ -92,7 +94,7 @@ function createPics(picture){
 }
 
 function getPictures(){
-    pictures.forEach(pic => createPics(pic));
+    shuffliedpictures.forEach(pic => createPics(pic));
 }
 
 getPictures();
