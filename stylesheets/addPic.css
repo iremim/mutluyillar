@@ -66,6 +66,13 @@ button {
     border-radius: 40px;
     border: 1px solid deepskyblue;
 }
+p {
+	color: honeydew;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0;
+}
 .disabled {
     opacity: 0.6;
     cursor: not-allowed;
@@ -112,7 +119,7 @@ button {
 		padding: 15px;
 	}
 	input {
-		width: 60vw;
+		width: 80%;
 	}
 	#inputLast {
 		width: auto;

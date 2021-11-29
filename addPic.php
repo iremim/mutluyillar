@@ -6,6 +6,8 @@ if(!isset($_SESSION["isLoggedIn"])){
     exit();
 }
 
+$user = $_SESSION["inLoggedUser"];
+
 require_once "phpfiles/functions.php";
 $albums = loadJson("phpfiles/albums.json");
 
@@ -42,8 +44,14 @@ $albums = loadJson("phpfiles/albums.json");
                     } 
                 }
             ?>
+            <p>
+            <label>Ön: </label>
             <input type="file" name="img">
+            </p>
+            <p>
+            <label>Arka: </label>
             <input type="file" name="imgFlip">
+            </p>
             <input id="inputLast" type="text" name="name" placeholder="Konu / Tarih">
             <select id="albumSelect" name="albumName">    
                 <?php
@@ -52,7 +60,12 @@ $albums = loadJson("phpfiles/albums.json");
                         echo "<option value=".$adressToSend.">".$adressToSend."</option>";
                     }else{
                         foreach($albums as $album){
-                            echo "<option value=".$album["albumName"].">".$album["albumName"]."</option>";
+                            if($user["id"] == 0){
+                                echo "<option value=".$album["albumName"].">".$album["albumName"]."</option>";
+                            }
+                            if($album["ownerId"] == $user["id"]){
+                                echo "<option value=".$album["albumName"].">".$album["albumName"]."</option>";
+                            }
                         }
                     }
                 ?>
