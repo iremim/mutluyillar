@@ -123,7 +123,7 @@ nextButton.addEventListener("click", ()=>{
             answersField.style.display ="flex";
             answersField.style.justifyContent ="center";
             answersField.innerHTML = `
-            <div style="width:80%; text-align:justify;">
+            <div style="width:80%; text-align:justify; color:black;">
             <p style="margin: 0;">Toplam poanin <span style="text-weight:bold; color:red">${totalPoan}</span>. 
             Neyse bugun dogum gunun oldugu icin
             yine de dile benden ne dilersen <i class='far fa-kiss-wink-heart' style='font-size:20px;color:red'></i></p>
@@ -149,7 +149,7 @@ nextButton.addEventListener("click", ()=>{
             answersField.style.display ="flex";
             answersField.style.justifyContent ="center";
             answersField.innerHTML = `
-            <div style="width:80%; text-align:justify;">
+            <div style="width:80%; text-align:justify; color:black;">
             <p style="margin: 0;">Toplam poanin <span style="text-weight:bold; color:green">${totalPoan}</span>. Kazandigin icin 
             dile benden ne dilersen <i class='far fa-kiss-wink-heart' style='font-size:20px;color:green'></i></p>
 
