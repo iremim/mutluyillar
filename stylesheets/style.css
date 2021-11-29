@@ -303,9 +303,11 @@ body{
 		font-weight: bold;
 	}
 	#playGround.playArea {
-		color: white;
-		box-shadow: 3px 5px 20px white;
-		border: 1px solid white;
+		color: whitesmoke;
+		box-shadow: 2px 5px 14px whitesmoke;
+		border: 1px solid whitesmoke;
+		border-radius: 60px;
+		overflow-y: scroll;
 	}
 	#playGround.playG {
 		border-radius: 5px;

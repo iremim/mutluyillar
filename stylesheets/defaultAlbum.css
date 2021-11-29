@@ -127,8 +127,9 @@ div.bigger {
     body{
         display: flex;
         align-items: center;
-        background-image: url("../backgroundPics/defaultAlbumBack.jpg");
+        background-image: url("../backgroundPics/loginDikey.jpg");
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         height: 100vh;
         overflow: hidden;
@@ -180,9 +181,10 @@ div.bigger {
         position: relative;
         height: 25vh;
         overflow: hidden;
-        border: 1px solid honeydew;
+        border: 1px solid rgb(142,10,36);
         border-radius: 20px;
         width: auto;
+        box-shadow: 0px 5px 6px #a80202;
     }
     .img{
         width: 100%;
