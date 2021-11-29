@@ -148,7 +148,6 @@ div.bigger {
         height: 5vh;
         font-size: 11px;
         flex-direction: row;
-        margin-bottom: 5px;
     }
     main {
         height: 100vh;
