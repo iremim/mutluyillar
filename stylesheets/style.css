@@ -36,7 +36,7 @@ body{
 		width: 85vw;
 		border: 1px solid red;
 		padding: 10px;
-		box-shadow: 5px 10px 18px red;
+		box-shadow: 5px 10px 18px rgb(142,10,36);
 		border-radius: 25px;
 		height: 60vh;
 		max-height: 60vh;
@@ -64,7 +64,7 @@ body{
 #start {
 	display: inline-block;
 	color: black;
-	background-color: red;
+	background-color: rgb(142,10,36);
 	border: 1px solid honeydew;
 	border-radius: 15px;
 	box-shadow: 5px 10px 18px black;
@@ -211,11 +211,11 @@ body{
 	}
 	body {
 		align-items: center;
-		background-image: url("../backgroundPics/valentine5.jpg");
+		background-image: url("../backgroundPics/loginDikey.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 
-		justify-content: flex-start;
+		justify-content: center;
 	}
 	#titleBox {
 		display: flex;
@@ -228,7 +228,8 @@ body{
 		height: 5vh;
 		font-size: 11px;
 		flex-direction: row;
-		margin-bottom: 5px;
+		position: absolute;
+		top: 0;
 	}
 	.container {
 		display: flex;
@@ -282,7 +283,7 @@ body{
 	}
 	.answer{
 		border: none;
-		background-color: rgba(194, 11, 11, 0.507);
+		background-color: rgb(142,10,36);
 		font-size: 15px;
 		display: flex;
 		justify-content: center;
@@ -301,9 +302,8 @@ body{
 	}
 	#playGround.playArea {
 		color: white;
-		box-shadow: 5px 10px 40px white;
+		box-shadow: 3px 5px 20px white;
 		border: 1px solid white;
-		margin-top: 30px;
 	}
 	#playGround.playG {
 		border-radius: 5px;
