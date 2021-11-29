@@ -65,6 +65,8 @@ deleteButtons.forEach(button => {
                     e.target.parentElement.classList.toggle("bigger");
                     e.target.parentElement.parentElement.classList.toggle("big");
         
+                    //To keep scroll on the clicked imgBox
+                    imgBox.scrollIntoView();
                 });
             });
         
