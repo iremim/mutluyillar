@@ -5,6 +5,7 @@ function checkTheUser($users, $username, $password){
     foreach($users as $user){
         if($user["username"] == $username && $user["password"] == $password){
             $_SESSION["inLoggedUser"] = $user;
+
             return true;
         } 
     }
@@ -74,7 +75,7 @@ echo '
     if(isset($_GET["error"])){
         $error = $_GET["error"];
         if($error == "wrongUsernameorPassword"){
-            echo "<p class='error'> Yanlis Kullanici adi veya Password!!</p>";
+            echo "<p class='error'> Yanlis Kullanici adi veya Sifre!!</p>";
         }
     }
 ?>

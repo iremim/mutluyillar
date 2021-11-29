@@ -15,6 +15,7 @@ body{
     height: 100vh;
 	overflow: hidden;
 };
+
 #playGround.playG {
 	display: flex;
 	align-items: center;
@@ -314,5 +315,13 @@ body{
 		height: fit-content;
 		max-height: fit-content;
 		overflow-y: scroll;
+	}
+
+	#otherUsersDiv{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: honeydew;
 	}
   }

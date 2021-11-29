@@ -8,6 +8,8 @@ if(!isset($_SESSION["isLoggedIn"])){
     exit();
 }
 
+$user = $_SESSION["inLoggedUser"];
+
 require_once "phpfiles/functions.php";
 $albums = loadJson("phpfiles/albums.json");
 
@@ -22,7 +24,8 @@ if(isset($_POST["albumName"])){
     $nameOfNewAlbum = $_POST["albumName"];
 
     $newAlbum = [
-        "albumName" => $nameOfNewAlbum
+        "albumName" => $nameOfNewAlbum,
+        "ownerId" => $user["id"]
     ];
 
     foreach($albums as $album){

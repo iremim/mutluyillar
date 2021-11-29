@@ -6,9 +6,14 @@
         "password": "canim"
     },
     {
-        "id": 2,
-        "username": "kaan",
+        "id": 0,
+        "username": "admin",
         "password": "kaan"
+    },
+    {
+        "id": 3,
+        "username": "sultan",
+        "password": "coban"
     }
     ]
 }
