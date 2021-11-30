@@ -1,6 +1,5 @@
 "use strict";
 
-localStorage.setItem("sorular", JSON.stringify(sorus));
 const questions = JSON.parse(localStorage.getItem("sorular"));
 
 let playground = document.querySelector("#playGround");

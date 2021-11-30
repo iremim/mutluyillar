@@ -25,7 +25,7 @@
         
                 </div>
             </main>
-            <script src="scripts/pictures.js"></script>
+            <script src="scripts/store.js"></script>
             <script src="scripts/scriptYear.js"></script>
         </body>
         </html>

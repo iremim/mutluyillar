@@ -1,6 +1,5 @@
 "use strict";
 
-localStorage.setItem("fotolar", JSON.stringify(pics));
 let pictures = JSON.parse(localStorage.getItem("fotolar"));
 
 let shuffliedpictures = pictures.sort(() => Math.random() - .5);

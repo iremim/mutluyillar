@@ -1,4 +1,4 @@
-const pics = [
+const fotos = [
     {
         id:1,
         pic : "https://hediyapp.herokuapp.com/aYear/teleferik.jpg",
