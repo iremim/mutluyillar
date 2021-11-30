@@ -41,23 +41,26 @@ $users = $data["users"];
         foreach($users as $user){
             if($user["id"] == $inloggedUser["id"]){
                 echo "
-                    <a href='profil.php?id=".$user['id']."' class='user aktif'>
+                    <a href='profil.php?id=".$user["id"]."' class='user aktif'>
                         <img src='".$user["avatar"]."'>
                         <p>".$user["username"]."</p>
                     </a>
                 ";
             }else{
                 echo "
-                    <a href='profil.php?id=".$user['id']."' class='user'>
+                    <a href='profil.php?id=".$user["id"]."' class='user'>
                         <img src='".$user["avatar"]."'>
                         <p>".$user["username"]."</p>
                     </a>    
                 ";
             }
         }
-        require_once "phpfiles/footer.php";
     ?>
     </div>
+    <?php 
+        $inLoggedUserID = $_SESSION["inLoggedUser"]["id"];
+        require_once "phpfiles/footer.php"; 
+    ?>
   
 </body>
 </html>

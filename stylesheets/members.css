@@ -73,9 +73,7 @@ footer {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	flex-grow: 1;
 	flex-direction: row;
-	flex-basis: 33%;
 }
 footer>a{
 	text-decoration: none;

@@ -73,9 +73,11 @@ $userId = $inloggedUser["id"];
                 </div>
             ';
         }
-       require_once "phpfiles/footer.php";
     ?>
-  
+    <?php 
+        $inLoggedUserID = $_SESSION["inLoggedUser"]["id"];
+        require_once "phpfiles/footer.php"; 
+    ?>
 </body>
 </html>
 

@@ -160,7 +160,7 @@ div.bigger {
         text-align: center;
         color: white;
     }
-    
+
     #fotoPlace {
         display: grid;
         grid-template-columns: 1fr 1fr;

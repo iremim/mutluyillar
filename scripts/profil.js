@@ -1,36 +1,12 @@
 "use strict";
 
-let fotoPlace = document.querySelector("#fotoPlace");
-
-let deleteButtons = document.querySelectorAll(".deletePicButton");
-
-deleteButtons.forEach(button => {
-    button.addEventListener("click", (e)=>{
-        e.stopPropagation();
-    })
-})
-
-let addFavButtons = document.querySelectorAll(".addFavorite");
-addFavButtons.forEach(addfav => {
-    addfav.addEventListener("click", (e)=>{
-        e.stopPropagation();
-    })
-});
-
-let remFavButtons = document.querySelectorAll(".removeFavorite");
-remFavButtons.forEach(remfav => {
-    remfav.addEventListener("click", (e)=>{
-        e.stopPropagation();
-    })
-})
-
     let changeButtons = document.querySelectorAll(".changeButton");
 
     changeButtons.forEach(changeButton => {
         changeButton.addEventListener("click", (event)=>{
             event.stopPropagation();
 
-            event.target.nextElementSibling.nextElementSibling.classList.toggle("hide");
+            event.target.nextElementSibling.classList.toggle("hide");
             event.target.parentElement.lastElementChild.classList.toggle("hide");
         });
     })
@@ -40,8 +16,7 @@ remFavButtons.forEach(remfav => {
         imgBoxes.forEach(imgBox => {
             imgBox.addEventListener("click", (event)=>{
      
-                document.querySelector("main").style.overflow = "hidden";
-                fotoPlace.classList.add("biggerFotoPlace");
+                // document.querySelector("main").style.overflow = "hidden";
         
                 let chosenID = event.target.parentElement.parentElement.id;
         
@@ -74,13 +49,12 @@ remFavButtons.forEach(remfav => {
                         }
                     });
         
-                    fotoPlace.classList.toggle("biggerFotoPlace");
-                    document.querySelector("main").style.overflow = "scroll";
+                    // document.querySelector("main").style.overflow = "scroll";
                     e.target.parentElement.classList.toggle("bigger");
                     e.target.parentElement.parentElement.classList.toggle("big");
         
                     //To keep scroll on the clicked imgBox
-                    imgBox.scrollIntoView();
+                    // imgBox.scrollIntoView();
                 });
             });
         

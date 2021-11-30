@@ -1,0 +1,150 @@
+body{
+    display: flex;
+    align-items: center;
+    background-image: url("../backgroundPics/profil.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    margin: 0;
+
+}
+#titleBox {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: black;
+	color: white;
+	height: 5vh;
+	font-size: 11px;
+	flex-direction: row;
+	margin-bottom: 5px;
+	position: absolute;
+	top: 0;
+}
+main {
+	height: 90vh;
+	width: 100vw;
+	position: relative;
+	overflow: scroll;
+	margin-top: 5vh;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+.user {
+	height: 10vh;
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	font-family: 'Tangerine', serif;
+	color: black;
+	font-size: 50px;
+	align-items: center;
+	box-shadow: 0px 10px 10px black;
+	background-color: deepskyblue;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+#usersAvatar {
+	border-radius: 40px;
+	border: 1px solid black;
+	height: 100%;
+    /* min-width: 27%; */
+}
+.aktif {
+	border-top: 1px solid honeydew;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.userFavorites {
+	margin-top: 1vh;
+}
+.userFavorites>p:first-child{
+	padding: 10px;
+	margin: 0;
+	background: aliceblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 17px;
+	border-bottom: 1px solid black;
+	margin-bottom: 1vh;
+}
+
+.mainBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.imgBox {
+	position: relative;
+	width: 42vh;
+	overflow: hidden;
+	border: 1px solid deepskyblue;
+	/* border-radius: 20px; */
+	/* width: auto; */
+	/* box-shadow: 0px 5px 6px #a80202; */
+	height: 42vh;
+}
+.img{
+    position: relative;
+	width: 100%;
+}
+.imgFlip{
+    position: relative;
+	width: 100%;
+}
+.underText {
+	color: white;
+	font-family: 'Kaushan Script', cursive;
+	margin-top: 0;
+}
+.changeButton {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: honeydew;
+}
+.w3-jumbo {
+    font-size: 20px !important;
+}
+.w3-spin {
+    animation: w3-spin 7s infinite linear;
+}
+.hide{
+	display: none;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 5vh;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	flex-direction: row;
+}
+footer>a{
+	text-decoration: none;
+	padding: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
