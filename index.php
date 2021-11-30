@@ -31,7 +31,7 @@ $inloggedUser = $_SESSION["inLoggedUser"];
     </div>
     
     <?php
-        if($inloggedUser["id"] == 1){
+        if($inloggedUser["id"] == 1 || $inloggedUser["id"] == 0){
             echo '
                 <div id="playGround" class="playArea">
                     <div id="firstDiv">
@@ -55,6 +55,9 @@ $inloggedUser = $_SESSION["inLoggedUser"];
                                 </div>
                         </div>
                 </div>
+                <script src="scripts/pictures.js"></script>
+                <script src="scripts/questions.js"></script>
+                <script src="scripts/store.js"></script>
             ';
           
         }else{
@@ -68,9 +71,6 @@ $inloggedUser = $_SESSION["inLoggedUser"];
             ';
         }
     ?>
-<script src="scripts/pictures.js"></script>
-<script src="scripts/questions.js"></script>
-<script src="scripts/store.js"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>
