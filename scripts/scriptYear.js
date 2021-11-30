@@ -1,7 +1,6 @@
 "use strict";
 
 const firstYearPics = [];
-let pictures;
 
 pics.forEach(pic => {
     firstYearPics.push(pic);
