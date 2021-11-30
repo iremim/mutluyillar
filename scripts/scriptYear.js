@@ -1,12 +1,6 @@
 "use strict";
 
-const firstYearPics = [];
-
-pics.forEach(pic => {
-    firstYearPics.push(pic);
-})
-
-localStorage.setItem("fotolar", JSON.stringify(firstYearPics));
+localStorage.setItem("fotolar", JSON.stringify(pics));
 let pictures = JSON.parse(localStorage.getItem("fotolar"));
 
 let shuffliedpictures = pictures.sort(() => Math.random() - .5);
