@@ -1,8 +1,8 @@
-const quests = [
+const sorus = [
     {
         id:1,
         question: "Bu resimdeki cirkini ne kadar seviyorum sence?",
-        img:"qPics/buCirkiniNeKadar.JPG",
+        img:"https://hediyapp.herokuapp.com/qPics/buCirkiniNeKadar.JPG",
         answers: [
             {value: 1, option: "Eh iste"},
             {value: 4, option: "Kucak dolusu"},
@@ -13,7 +13,7 @@ const quests = [
     {
         id:2,
         question: "Burda ki mutluluga bi rakam versen, bu kac olurdu?",
-        img:"qPics/BurdakiMutlulugunDegeri.JPG",
+        img:"https://hediyapp.herokuapp.com/qPics/BurdakiMutlulugunDegeri.JPG",
         answers: [
             {value: 6, option: "Huh, bu da mutluluk mu?!"},
             {value: 10, option: "Hala o anin etkisindeyim"},
@@ -24,7 +24,7 @@ const quests = [
     {
         id:3,
         question: "Bu el kimin eli?",
-        img:"qPics/elKimin.jpg",
+        img:"https://hediyapp.herokuapp.com/qPics/elKimin.jpg",
         answers: [
             {value: 1, option: "Uff sirada ki soru lutfen!!"},
             {value: 7, option: "Hmmmm"},
@@ -35,7 +35,7 @@ const quests = [
     {
         id:4,
         question: "Aklimdan burda gecen ne olabilir?",
-        img:"qPics/aklimdangecenne.jpg",
+        img:"https://hediyapp.herokuapp.com/qPics/aklimdangecenne.jpg",
         answers: [
             {value: 3, option: "Uff gunes batsa da gitsek!!"},
             {value: 6, option: "Ne kadar sansli bi kiz ya"},
@@ -46,7 +46,7 @@ const quests = [
     {
         id:5,
         question: "Burda evet dendi okey, tamam ama tekrar sorsalar cevabin ne olurdu?",
-        img:"qPics/sizcecevapne.jpg",
+        img:"https://hediyapp.herokuapp.com/qPics/sizcecevapne.jpg",
         answers: [
             {value: 7, option: "Evet!"},
             {value: 3, option: "Yok almayim!"},
@@ -57,7 +57,7 @@ const quests = [
     {
         id:6,
         question: "Ilk gittigimiz mekana poanin kac?",
-        img:"qPics/ilkbulusma.JPG",
+        img:"https://hediyapp.herokuapp.com/qPics/ilkbulusma.JPG",
         answers: [
             {value: 3, option: "10 uzerinden 3"},
             {value: 5, option: "10 uzerinden 5"},
@@ -68,7 +68,7 @@ const quests = [
     {
         id:7,
         question: "Bu tatliliga poanim kac?",
-        img:"qPics/tatlim.jpg",
+        img:"https://hediyapp.herokuapp.com/qPics/tatlim.jpg",
         answers: [
             {value: 8, option: "Tabikisi 10"},
             {value: 7, option: "Eh ayip olmasin, 7"},
@@ -79,7 +79,7 @@ const quests = [
     {
         id:8,
         question: "Saat burda tam olarak kac olabilir?",
-        img:"qPics/saatKac.jpg",
+        img:"https://hediyapp.herokuapp.com/qPics/saatKac.jpg",
         answers: [
             {value: 10, option: "17:00 civari olmasi lazim"},
             {value: 1, option: "Yok artik, böyle soru mu olur!"},
@@ -90,7 +90,7 @@ const quests = [
     {
         id:9,
         question: "Resimde ki meshur deve kac yilda olusmustur?",
-        img:"qPics/meshurPeriBacasi.jpg",
+        img:"https://hediyapp.herokuapp.com/qPics/meshurPeriBacasi.jpg",
         answers: [
             {value: 1, option: "Ne biliyim, git deveye sor!"},
             {value: 10, option: "Yatalim mi?"},
@@ -101,7 +101,7 @@ const quests = [
     {
         id:10,
         question: "Fotografta anlatilmak istenen sey ne?",
-        img:"qPics/gunesbatimi.jpg",
+        img:"https://hediyapp.herokuapp.com/qPics/gunesbatimi.jpg",
         answers: [
             {value: 6, option: "Cayim sogudu yine"},
             {value: 2, option: "Aciktim"},
@@ -112,7 +112,7 @@ const quests = [
     {
         id:11,
         question: "Sence konusulan konu ne? (Altin soru)",
-        img:"qPics/bonus.JPG",
+        img:"https://hediyapp.herokuapp.com/qPics/bonus.JPG",
         answers: [
             {value: 15, option: "Amcanin `Kama` meyve bicagi"},
             {value: 12, option: "Amcanin balkonu"},
@@ -123,7 +123,7 @@ const quests = [
     {
         id:12,
         question: "Bu uyuyan guzeli nasil uyandirmali?",
-        img:"qPics/nasiluyandirirsin.jpg",
+        img:"https://hediyapp.herokuapp.com/qPics/nasiluyandirirsin.jpg",
         answers: [
             {value: 6, option: "Bi kova suyla"},
             {value: 5, option: "Durterek"},
