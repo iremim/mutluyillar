@@ -22,7 +22,7 @@
         "id": 3,
         "username": "Merve",
         "password": "coban",
-        "avatar": "profilFotos/merveProfilFoto.jpg"
+        "avatar": "profilFotos/merveProfilFoto.jpeg"
     },
     {
         "id": 4,
@@ -41,18 +41,6 @@
         "username": "Narin",
         "password": "coban",
         "avatar": "profilFotos/narinProfilFoto.png"
-    },
-    {
-        "id": 3,
-        "username": "Sultan",
-        "password": "coban",
-        "avatar": "profilFotos/sultanProfilFoto.jpg"
-    },
-    {
-        "id": 3,
-        "username": "Sultan",
-        "password": "coban",
-        "avatar": "profilFotos/sultanProfilFoto.jpg"
     }
 ]
 }

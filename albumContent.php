@@ -50,8 +50,15 @@ if($_GET["album"]){
                     echo "
                         <div class='mainBox' id=".$pic["id"].">
                             <div class="."imgBox"."><a class='deletePicButton' href='phpfiles/deletePic.php?id=".$pic["id"]."&album=".$album."'>X</a>
-                                <i class='w3-jumbo w3-spin fa fa-refresh changeButton'>
-                                </i><img class='img' src='".$pic["imgUrl"]."'>
+                                <i class='w3-jumbo w3-spin fa fa-refresh changeButton'></i>";
+
+                                if($pic["favorite"]== false){
+                                    echo "<a href='phpfiles/favorite.php?add=".$pic["id"]."&album=".$album."' class='addFavorite'><span class='material-icons'>favorite_border</span></a>";
+                                }else{
+                                    echo "<a href='phpfiles/favorite.php?rem=".$pic["id"]."&album=".$album."' class='removeFavorite'><span class='material-icons'>favorite</span></a>";
+                                }
+
+                               echo "<img class='img' src='".$pic["imgUrl"]."'>
                                 <img class='imgFlip hide' src='".$pic["imgFlipUrl"]."'>
                             </div>
                             <p class='underText'>".$pic["name"]."</p>

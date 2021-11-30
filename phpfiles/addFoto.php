@@ -50,11 +50,13 @@ if($method == "POST" && !empty($_FILES["img"]) && !empty($_FILES["imgFlip"]) && 
       
         $newFoto = [
             "id"=> $highestId,
+            "ownerID" => $_SESSION["inLoggedUser"]["id"],
             "album"=>$albumName,
             "imgUrl"=>"upload/$uniqueFilename.$ext",
             "name"=> $imgName,
             "imgFlipUrl"=> "upload/$uniqueFilename"."Flip.$ext",
             "nameFlip" => $imgName."Flip",
+            "favorite" => false
         ];
 
       array_push($fotos, $newFoto);

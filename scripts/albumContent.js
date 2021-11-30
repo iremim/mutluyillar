@@ -10,6 +10,21 @@ deleteButtons.forEach(button => {
     })
 })
 
+let addFavButtons = document.querySelectorAll(".addFavorite");
+addFavButtons.forEach(addfav => {
+    addfav.addEventListener("click", (e)=>{
+        e.stopPropagation();
+    })
+});
+
+let remFavButtons = document.querySelectorAll(".removeFavorite");
+remFavButtons.forEach(remfav => {
+    remfav.addEventListener("click", (e)=>{
+        e.stopPropagation();
+    })
+})
+
+
     let changeButtons = document.querySelectorAll(".changeButton");
 
     changeButtons.forEach(changeButton => {

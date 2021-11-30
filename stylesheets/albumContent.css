@@ -111,7 +111,7 @@ div.bigger {
 
     overflow: scroll;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 	display: flex;
 
     transition: all 1s ease;
@@ -200,12 +200,10 @@ div.bigger {
         position: relative;
         overflow-y: scroll;
     }
-    
     #title{
         text-align: center;
         color: white;
     }
-    
     #fotoPlace {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -275,6 +273,20 @@ div.bigger {
         top: 5.3%;
         z-index: 2;
         right: 6.5%;
+    }
+    .addFavorite {
+        position: absolute;
+        z-index: 1;
+        bottom: 5.4%;
+        right: 6.5%;
+        color: rgb(142,10,36);
+    }
+    .removeFavorite {
+        position: absolute;
+        z-index: 1;
+        bottom: 5.4%;
+        right: 6.5%;
+        color: rgb(142,10,36);
     }
     #fotoPlace.biggerFotoPlace {
         gap: 0px;
