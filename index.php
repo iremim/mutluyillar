@@ -69,8 +69,6 @@ $inloggedUser = $_SESSION["inLoggedUser"];
         }
     ?>
 
-<script src="scripts/pictures.js"></script>
-<script src="scripts/scriptYear.js"></script>
 <script src="scripts/questions.js"></script>
 <script src="scripts/script.js"></script>
 </body>
