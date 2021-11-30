@@ -2,18 +2,57 @@
     "users" : [
     {
         "id": 1,
-        "username": "irem",
-        "password": "canim"
+        "username": "Irem",
+        "password": "canim",
+        "avatar": "profilFotos/iremProfilFoto.jpg"
     },
     {
         "id": 0,
-        "username": "admin",
-        "password": "kaan"
+        "username": "Kaan",
+        "password": "admin",
+        "avatar": "profilFotos/kaanProfilFoto.jpg"
+    },
+    {
+        "id": 2,
+        "username": "Sultan",
+        "password": "coban",
+        "avatar": "profilFotos/sultanProfilFoto.jpg"
     },
     {
         "id": 3,
-        "username": "sultan",
-        "password": "coban"
+        "username": "Merve",
+        "password": "coban",
+        "avatar": "profilFotos/merveProfilFoto.jpg"
+    },
+    {
+        "id": 4,
+        "username": "Berivan",
+        "password": "coban",
+        "avatar": "profilFotos/berivanProfilFoto.jpg"
+    },
+    {
+        "id": 5,
+        "username": "Ilayda",
+        "password": "coban",
+        "avatar": "profilFotos/ilaydaProfilFoto.jpg"
+    },
+    {
+        "id": 3,
+        "username": "Narin",
+        "password": "coban",
+        "avatar": "profilFotos/narinProfilFoto.png"
+    },
+    {
+        "id": 3,
+        "username": "Sultan",
+        "password": "coban",
+        "avatar": "profilFotos/sultanProfilFoto.jpg"
+    },
+    {
+        "id": 3,
+        "username": "Sultan",
+        "password": "coban",
+        "avatar": "profilFotos/sultanProfilFoto.jpg"
     }
-    ]
+]
 }

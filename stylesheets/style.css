@@ -62,6 +62,27 @@ body{
 	font-family: 'Cinzel', serif;
 	font-size: 30px;
 }
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 5vh;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	flex-grow: 1;
+	flex-direction: row;
+	flex-basis: 33%;
+}
+footer>a{
+	text-decoration: none;
+	padding: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
 #start {
 	display: inline-block;
 	color: black;
@@ -85,11 +106,10 @@ body{
 	animation: 2s ease 0s infinite beat;
 }
 
-
 @keyframes beat {
 	0%, 50%, 100% { transform: scale(1, 1); }
 	30%, 80% { transform: scale(0.92, 0.95); }
-  }
+}
 
 .hide{
 	display: none;
@@ -316,7 +336,6 @@ body{
 		max-height: fit-content;
 		overflow-y: scroll;
 	}
-
 	#otherUsersDiv{
 		display: flex;
 		justify-content: center;

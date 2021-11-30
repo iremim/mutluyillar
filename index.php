@@ -7,6 +7,7 @@ if(!isset($_SESSION["isLoggedIn"])){
 }
 
 $inloggedUser = $_SESSION["inLoggedUser"];
+$userId = $inloggedUser["id"];
 ?>
 
 <html lang="en">
@@ -18,7 +19,8 @@ $inloggedUser = $_SESSION["inLoggedUser"];
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="stylesheets/style.css">
-
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Birlikte Nice Senelere</title>
@@ -29,16 +31,16 @@ $inloggedUser = $_SESSION["inLoggedUser"];
         <h1 style="font-family:'Kaushan Script', cursive; font-size:25px; width: 34vh;text-align: center;"><a href="index.php" style="text-decoration: none;color: white;">HediyApp</a></h1>
         <a href="logout.php"><i class="fa fa-sign-out" style="font-size:24px; color: white;"></i></a>
     </div>
-    
+    <!-- font-family: 'Tangerine', serif; -->
     <?php
-        if($inloggedUser["id"] == 1 || $inloggedUser["id"] == 0){
+        if($userId == 1 || $userId == 0){
             echo '
                 <div id="playGround" class="playArea">
                     <div id="firstDiv">
                         <h2>Mutlu Yıllar Sevgilim <i id="heart" class="far fa-heart" style="font-size:34px;color:white; margin-left: 6.8px;"></i></h2>
                     </div>
                     <div id="secondDiv" style="padding: 10px; height: 160px; position: relative; text-align: justify;">
-                        <p>Bugün sevgili karımın doğum günü, bu yüzden onu mutlu etmek için bu küçük uygulamayi yaptım.
+                        <p>Bugün sevgili esimin doğum günü, bu yüzden onu mutlu etmek için bu küçük uygulamayi yaptım.
                             Umarım seninle geçireceğimiz daha çok doğum günleri olur canım. 
                             Ne dün ne yarın, insan hayatındaki en önemli an şu anıdır.  
                             Onun  için her zaman her anımda olmanı istiyorum. <i class="fas fa-kiss-wink-heart" style="font-size:20px; color:white;"></i></p>
@@ -71,7 +73,9 @@ $inloggedUser = $_SESSION["inLoggedUser"];
                 </div>
             ';
         }
+       require_once "phpfiles/footer.php";
     ?>
+  
 </body>
 </html>
 

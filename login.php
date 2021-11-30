@@ -3,7 +3,7 @@ session_start();
 
 function checkTheUser($users, $username, $password){
     foreach($users as $user){
-        if($user["username"] == $username && $user["password"] == $password){
+        if(strtolower($user["username"]) == $username && strtolower($user["password"]) == $password){
             $_SESSION["inLoggedUser"] = $user;
 
             return true;
@@ -25,7 +25,7 @@ $users = $data["users"];
     if (isset($_POST["username"], $_POST["password"])) {
         $username = strtolower($_POST["username"]);
         $password = strtolower($_POST["password"]);
-        
+
         if(empty($username) || empty($password)){
             header("Location: login.php?error=filltheboth");
             exit();
