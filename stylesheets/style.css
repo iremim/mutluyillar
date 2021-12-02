@@ -1,5 +1,16 @@
-#titleBox{
-	display: none;
+#titleBox {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 100%;
+	background-color: black;
+	color: white;
+	height: 10vh;
+	font-size: 11px;
+	flex-direction: row;
+	position: absolute;
+	top: 0;
 }
 body{
     display: flex;
@@ -15,7 +26,6 @@ body{
     height: 100vh;
 	overflow: hidden;
 };
-
 #playGround.playG {
 	display: flex;
 	align-items: center;
@@ -219,18 +229,7 @@ body{
 		justify-content: center;
 	}
 	#titleBox {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-
-		width: 100%;
-		background-color: black;
-		color: white;
 		height: 5vh;
-		font-size: 11px;
-		flex-direction: row;
-		position: absolute;
-		top: 0;
 	}
 	.container {
 		display: flex;

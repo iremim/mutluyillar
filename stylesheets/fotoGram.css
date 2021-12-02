@@ -11,8 +11,20 @@ body {
 	justify-content: center;
 	width: 100vw;
 }
+
 #titleBox {
-    display: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: black;
+	color: white;
+	height: 10vh;
+	font-size: 11px;
+	flex-direction: row;
+
+	position: absolute;
+	top: 0;
 }
 main {
 	height: auto;
@@ -26,7 +38,7 @@ main {
 }
 #fotoPlace {
 	display: flex;
-	gap: 10px;
+	gap: 3vw;
 	position: relative;
 	overflow-x: scroll;
 }
@@ -103,17 +115,9 @@ main {
         align-items: flex-start;
     }
     #titleBox {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    
-        width: 100%;
-        background-color: black;
-        color: white;
         height: 5vh;
-        font-size: 11px;
-        flex-direction: row;
         margin-bottom: 5px;
+        position: relative;
     }
     #title{
         text-align: center;

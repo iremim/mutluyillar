@@ -77,6 +77,13 @@ $userId = $inloggedUser["id"];
         $inLoggedUserID = $_SESSION["inLoggedUser"]["id"];
         require_once "phpfiles/footer.php"; 
     ?>
+    <style>
+        @media only screen and (max-height: 400px) {
+        footer>a{
+	    color: black;
+        }
+    }
+    </style>
 </body>
 </html>
 

@@ -73,3 +73,13 @@ img {
 	text-decoration-color: rgb(142,10,36);
 	text-decoration-style: double;
 }
+@media only screen and (max-height: 400px) {
+
+	#titleBox{
+		height: 10vh;
+	}
+	.user{
+		height: 65vh;
+		font-size: 25vh;
+	}
+}

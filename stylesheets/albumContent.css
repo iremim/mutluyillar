@@ -12,7 +12,17 @@ body {
 	width: 100vw;
 }
 #titleBox {
-    display: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	background-color: black;
+	color: white;
+	height: 10vh;
+	font-size: 11px;
+	flex-direction: row;
+	position: absolute;
+	top: 0;
 }
 main{
 	height: auto;
@@ -118,6 +128,7 @@ div.big{
     height: 100%;
     font-size: 25px;
     transition: all 1s ease;
+    z-index: 1;
 }
 div.bigger {
     height: 90vh;
@@ -138,6 +149,7 @@ div.bigger {
 	display: flex;
     justify-content: center;
     align-items: center;
+    height: 92vh;
 }
 .moreFrontier{
 	position: relative;
@@ -197,16 +209,8 @@ div.bigger {
         width: 100vw;
     }
     #titleBox {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    
-        width: 100%;
-        background-color: black;
-        color: white;
         height: 5vh;
-        font-size: 11px;
-        flex-direction: row;
+        position: relative;
     }
     main {
         height: 100vh;
@@ -303,6 +307,7 @@ div.bigger {
     div.big{
         height: 60vh;
         font-size: 25px;
+        z-index: 0;
     }
     div.bigger {
         height: 51vh;

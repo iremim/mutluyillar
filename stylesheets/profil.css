@@ -31,11 +31,12 @@ main {
 	height: 90vh;
 	width: 100vw;
 	position: relative;
-	overflow: scroll;
+	overflow-y: scroll;
 	margin-top: 5vh;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 .user {
 	height: 10vh;
@@ -46,7 +47,7 @@ main {
 	color: black;
 	align-items: center;
 	box-shadow: 0px 10px 10px black;
-	background-color: deepskyblue;
+	background-color: rgb(142,10,36);
 	position: sticky;
 	top: 0;
 	z-index: 100;
@@ -63,9 +64,7 @@ main {
 	font-weight: bold;
 }
 #profilText {
-	/* margin: 0; */
 	height: 10vh;
-	/* text-align: center; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -87,7 +86,7 @@ main {
 .userFavorites {
 	margin-top: 1vh;
 }
-.userFavorites>p:first-child{
+#favText{
 	padding: 10px;
 	margin: 0;
 	background: aliceblue;
@@ -98,6 +97,7 @@ main {
 	font-size: 17px;
 	border-bottom: 1px solid black;
 	margin-bottom: 1vh;
+	margin-top: 1vh;
 }
 .mainBox {
     display: flex;
@@ -109,11 +109,9 @@ main {
 	position: relative;
 	width: 42vh;
 	overflow: hidden;
-	border: 1px solid deepskyblue;
-	/* border-radius: 20px; */
-	/* width: auto; */
-	/* box-shadow: 0px 5px 6px #a80202; */
+	border: 1px solid rgb(142,10,36);
 	height: 42vh;
+	box-shadow: 0px 3px 12px rgb(142,10,36);
 }
 .img{
     position: relative;
@@ -146,4 +144,40 @@ main {
 }
 .hide{
 	display: none;
+}
+
+@media only screen and (max-height: 400px) {
+
+	#titleBox{
+		height: 10vh;
+		z-index: 101;
+	}
+	.user {
+		height: 45vh;
+		position: relative;
+		top: 5vh;
+	}
+	#favText {
+		position: relative;
+		top: 6vh;
+		margin-bottom: 8vh;
+	}
+	.userFavorites {
+		display: flex;
+		flex-direction: row;
+		gap: 3vh;
+		overflow: scroll;
+		height: 100%;
+		width: 96vw;
+		margin: auto;
+	}
+	#profilText > p:first-child {
+		font-size: 70px;
+	}
+	#profilText > p:last-child {
+		font-size: 28px;
+	}
+	.imgBox{
+		box-shadow: 0px 2px 5px rgb(142,10,36);
+	}
 }

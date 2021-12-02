@@ -31,7 +31,7 @@ if($_GET["album"]){
                     <body>
                         <div id="titleBox">
                             <a href="index.php"><i class="fa fa-home" style="font-size:24px;color: white;"></i></a>
-                            <h1 style="font-family:'; echo "'Kaushan Script'"; echo', cursive; font-weight:bold; font-size:25px; width: 34vh;text-align: center;"><a href="logout.php" style="text-decoration: none;color: white;">'; echo $album; echo'</a></h1>
+                            <h1 style="font-family:'; echo "'Kaushan Script'"; echo', cursive; font-weight:bold; font-size:25px; width: 34vh;text-align: center;"><a style="text-decoration: none;color: white;">'; echo $album; echo'</a></h1>
                             <a href="fotoGram.php"><i class="material-icons" style="font-size:24px;color: white;">collections</i></a>
                         </div> 
                         <main>';
