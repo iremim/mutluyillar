@@ -167,3 +167,25 @@ main {
 input{
 	text-align: center;
 }
+
+@media only screen and (max-height: 400px) {
+
+	#titleBox{
+		height: 10vh;
+	}
+	.user{
+		flex-direction: row;
+		width: 90vw;
+		justify-content: space-evenly;
+	}
+	#avatarSide{
+		margin-top: unset;
+		width: 35%;
+	}
+	#textSide{
+		max-width: 40vw;
+	}
+	#description{
+		width: 38vw;
+	}
+}
