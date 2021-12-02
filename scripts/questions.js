@@ -130,5 +130,16 @@ const sorus = [
             {value: 3, option: "Tokatla"},
             {value: 10, option: "Öperek"}
         ] 
+    },
+    {
+        id:13,
+        question: "En sevdigim renk?",
+        img:"https://hediyapp.herokuapp.com/qPics/favoriRenk.jpg",
+        answers: [
+            {value: 3, option: "Mavi"},
+            {value: 5, option: "Sari"},
+            {value: 5, option: "Siyah"},
+            {value: 10, option: "Kirmizi"}
+        ] 
     }
 ];

@@ -22,8 +22,8 @@ document.getElementById("changeAvatar").addEventListener("click", ()=>{
     });
 
     updateBox.innerHTML = `
-        <form id="avatarForm" action="phpfiles/updateUser.php" method="POST">
-            <input type="file" name="newImg">
+        <form id="avatarForm" action="phpfiles/updateUser.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="img">
             <button>Ekle</button>
         </form>
     `;
