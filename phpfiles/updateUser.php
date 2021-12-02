@@ -31,14 +31,16 @@ if(isset($_FILES["img"])){
 
     foreach($users as $index => $user){
         if($user["id"] == $inLoggedUserID){
-            $avatarToDelete = "../".$user["avatar"];
-            unlink($avatarToDelete);
+            if($user["avatar"] !== ""){
+                $avatarToDelete = "../".$user["avatar"];
+                unlink($avatarToDelete);
+            }
 
-            $user["avatar"] = "https://hediyapp.herokuapp.com/profilFotos/$uniqueFilename.$ext";
+            $user["avatar"] = "profilFotos/$uniqueFilename.$ext";
             $users[$index] = $user;
         }
     } 
-    
+
     $data["users"] = $users;
     saveJson("users.json",$data);
     header("Location: ../settings.php?id=$inLoggedUserID");

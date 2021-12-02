@@ -145,9 +145,9 @@ main {
 #avatarForm{
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 	gap: 20px;
+	max-width: 75vw;
 }
 #userForm{
 	display: flex;
