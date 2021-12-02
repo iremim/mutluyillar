@@ -99,6 +99,8 @@ main {
         justify-content: center;
         margin-top: 3vh;
         overflow-y: scroll;
+        max-height: 85vh;
+        align-items: flex-start;
     }
     #titleBox {
         display: flex;

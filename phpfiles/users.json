@@ -1,46 +1,53 @@
 {
-    "users" : [
-    {
-        "id": 1,
-        "username": "Irem",
-        "password": "canim",
-        "avatar": "profilFotos/iremProfilFoto.jpg"
-    },
-    {
-        "id": 0,
-        "username": "Kaan",
-        "password": "admin",
-        "avatar": "profilFotos/kaanProfilFoto.jpg"
-    },
-    {
-        "id": 2,
-        "username": "Sultan",
-        "password": "coban",
-        "avatar": "profilFotos/sultanProfilFoto.jpg"
-    },
-    {
-        "id": 3,
-        "username": "Merve",
-        "password": "coban",
-        "avatar": "profilFotos/merveProfilFoto.jpeg"
-    },
-    {
-        "id": 4,
-        "username": "Berivan",
-        "password": "coban",
-        "avatar": "profilFotos/berivanProfilFoto.jpg"
-    },
-    {
-        "id": 5,
-        "username": "Ilayda",
-        "password": "coban",
-        "avatar": "profilFotos/ilaydaProfilFoto.JPG"
-    },
-    {
-        "id": 6,
-        "username": "Narin",
-        "password": "coban",
-        "avatar": "profilFotos/narinProfilFoto.png"
-    }
-]
+    "users": [
+        {
+            "id": 1,
+            "username": "Irem",
+            "password": "canim",
+            "avatar": "profilFotos\/iremProfilFoto.jpg",
+            "description": "Dunya Guzeli"
+        },
+        {
+            "id": 0,
+            "username": "Admin",
+            "password": "admin",
+            "avatar": "profilFotos\/kaanProfilFoto.jpg",
+            "description": "Admin"
+        },
+        {
+            "id": 2,
+            "username": "Sultan",
+            "password": "coban",
+            "avatar": "profilFotos\/sultanProfilFoto.jpg",
+            "description": "Dunya Guzeli"
+        },
+        {
+            "id": 3,
+            "username": "Merve",
+            "password": "coban",
+            "avatar": "profilFotos\/merveProfilFoto.jpeg",
+            "description": "Dunya Guzeli"
+        },
+        {
+            "id": 4,
+            "username": "Berivan",
+            "password": "coban",
+            "avatar": "profilFotos\/berivanProfilFoto.jpg",
+            "description": "Dunya Guzeli"
+        },
+        {
+            "id": 5,
+            "username": "Ilayda",
+            "password": "coban",
+            "avatar": "profilFotos\/ilaydaProfilFoto.JPG",
+            "description": "Dunya Guzeli"
+        },
+        {
+            "id": 6,
+            "username": "Narin",
+            "password": "coban",
+            "avatar": "profilFotos\/narinProfilFoto.png",
+            "description": "Dunya Guzeli"
+        }
+    ]
 }

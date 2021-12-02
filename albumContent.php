@@ -34,17 +34,18 @@ if($_GET["album"]){
                             <h1 style="font-family:'; echo "'Kaushan Script'"; echo', cursive; font-weight:bold; font-size:25px; width: 34vh;text-align: center;"><a href="logout.php" style="text-decoration: none;color: white;">'; echo $album; echo'</a></h1>
                             <a href="fotoGram.php"><i class="material-icons" style="font-size:24px;color: white;">collections</i></a>
                         </div> 
-                        <main>
-                            <div id="fotoPlace">';
+                        <main>';
 
             $albums = loadJson("phpfiles/albums.json");
             $addedFotos = loadJson("phpfiles/addedFotos.json");
 
             $chosenAlbumsPics = getAlbumsPicture($album, $albums,$addedFotos);
 
-            if(!isset($chosenAlbumsPics)){
-                echo '<p style="color:red;">Album bos, <a href="addPic.php">Burdan </a>foto ekleyebilirsin</p>';
+            if(empty($chosenAlbumsPics)){
+                echo '<p style="color:white; text-align:center;">Album "'.$album.'" suan bos, asagidan foto ekleyebilirsin!</p>';
+                echo '<div id="fotoPlace">';
             }else{
+                echo '<div id="fotoPlace">';
 
                 foreach(getAlbumsPicture($album, $albums,$addedFotos) as $pic){
                     echo "
@@ -73,11 +74,13 @@ if($_GET["album"]){
                 </div>';
 
             require_once "phpfiles/footerAlbumContent.php";
-
+        
         } else{
             require_once "phpfiles/defaultAlbum.php";
         }
 
+        $inLoggedUserID = $_SESSION["inLoggedUser"]["id"];
+        require_once "phpfiles/footer.php";
 }
 ?>
 

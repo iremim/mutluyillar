@@ -65,24 +65,6 @@ img {
 	height: 100%;
     min-width: 27%;
 }
-footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 5vh;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	flex-direction: row;
-}
-footer>a{
-	text-decoration: none;
-	padding: 35px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-}
 .aktif {
 	border-top: 1px solid honeydew;
 	font-style: italic;

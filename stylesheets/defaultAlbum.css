@@ -166,6 +166,7 @@ div.bigger {
         grid-template-columns: 1fr 1fr;
         gap: 15px;
         position: relative;
+        height: 88vh;
     }
     .mainBox {
         display: flex;

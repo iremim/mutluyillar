@@ -21,7 +21,7 @@ if(isset($_GET["id"])){
             $fotoFlipimgUrl = "../".$foto["imgFlipUrl"];
 
             unlink($fotoimgUrl);
-            unlink($fotoFlipimgUrl);
+            unlink($fotoFlipimgUrl);  
         }
     }
 

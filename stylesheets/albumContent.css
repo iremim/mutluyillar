@@ -100,6 +100,20 @@ main{
 .w3-spin {
 	animation: w3-spin 7s infinite linear;
 }
+.addFavorite {
+    position: absolute;
+    z-index: 1;
+    bottom: 5.4%;
+    right: 6.5%;
+    color: rgb(142,10,36);
+}
+.removeFavorite {
+    position: absolute;
+    z-index: 1;
+    bottom: 5.4%;
+    right: 6.5%;
+    color: rgb(142,10,36);
+}
 div.big{
     height: 100%;
     font-size: 25px;
@@ -210,6 +224,8 @@ div.bigger {
         gap: 20px;
         position: relative;
         margin-top: 5px;
+        max-height: calc(88vh - 5px);
+        align-items: unset;
     }
     .mainBox {
         display: flex;
@@ -273,20 +289,6 @@ div.bigger {
         top: 5.3%;
         z-index: 2;
         right: 6.5%;
-    }
-    .addFavorite {
-        position: absolute;
-        z-index: 1;
-        bottom: 5.4%;
-        right: 6.5%;
-        color: rgb(142,10,36);
-    }
-    .removeFavorite {
-        position: absolute;
-        z-index: 1;
-        bottom: 5.4%;
-        right: 6.5%;
-        color: rgb(142,10,36);
     }
     #fotoPlace.biggerFotoPlace {
         gap: 0px;

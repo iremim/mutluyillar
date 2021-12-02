@@ -9,8 +9,9 @@ if(!isset($_SESSION["isLoggedIn"])){
 $inloggedUser = $_SESSION["inLoggedUser"];
 
     require_once "phpfiles/functions.php";
-
+    require_once "phpfiles/links.php";
     require_once "phpfiles/headerFotoGram.php";
+
 
     if($inloggedUser["id"] == 1 || $inloggedUser["id"] == 0){
         echo '<div class="albumBox">
@@ -47,5 +48,8 @@ $inloggedUser = $_SESSION["inLoggedUser"];
         ';
                     
     require_once "phpfiles/footerFotoGram.php";
-
+?>
+ <?php 
+        $inLoggedUserID = $_SESSION["inLoggedUser"]["id"];
+        require_once "phpfiles/footer.php"; 
 ?>

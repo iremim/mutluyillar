@@ -30,6 +30,7 @@ if(isset($_GET["album"])){
 
                     $fotoToDelete = "../".$foto["imgUrl"];
                     $fotoFlipToDelete = "../".$foto["imgFlipUrl"];
+
                     unlink($fotoToDelete);
                     unlink($fotoFlipToDelete);
                 }

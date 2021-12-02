@@ -26,5 +26,7 @@
                 </div>
             </main>
             <script src="scripts/scriptYear.js"></script>
+            
+            <?php require_once "footer.php"; ?>
         </body>
         </html>

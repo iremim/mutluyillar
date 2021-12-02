@@ -62,26 +62,6 @@ body{
 	font-family: 'Cinzel', serif;
 	font-size: 30px;
 }
-footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 5vh;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	flex-grow: 1;
-	flex-direction: row;
-	flex-basis: 33%;
-}
-footer>a{
-	text-decoration: none;
-	padding: 35px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-}
 
 #start {
 	display: inline-block;

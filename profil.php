@@ -55,7 +55,10 @@ if(isset($_GET["id"])){
                     echo "
                         <div class='user aktif'>
                             <img id='usersAvatar' src='".$user["avatar"]."'>
-                            <p>".$user["username"]."</p>
+                            <div id='profilText'>
+                                <p>".$user["username"]."</p>
+                                <p>".$user["description"]."</p>
+                            </div>
                         </div>
                     ";
                 }
