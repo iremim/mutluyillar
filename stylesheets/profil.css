@@ -104,6 +104,7 @@ main {
     align-items: center;
     position: relative;
     flex-direction: column;
+	margin-right: 0px;
 }
 .imgBox {
 	position: relative;
@@ -165,7 +166,7 @@ main {
 	.userFavorites {
 		display: flex;
 		flex-direction: row;
-		gap: 20px;
+		gap: 3vw;
 		overflow: scroll;
 		height: 100%;
 		width: 96vw;
@@ -176,6 +177,9 @@ main {
 	}
 	#profilText > p:last-child {
 		font-size: 28px;
+	}
+	.mainBox{
+		margin-right: 10px;
 	}
 	.imgBox{
 		box-shadow: 0px 2px 5px rgb(142,10,36);

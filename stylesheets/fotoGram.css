@@ -41,7 +41,6 @@ main {
 	gap: 3vw;
 	position: relative;
 	overflow-x: scroll;
-    width: 90vw;
 }
 .albumBox {
 	background-image: url("../backgroundPics/AlbumKapakFoto.jpg");
