@@ -1,7 +1,7 @@
 body{
     display: flex;
     align-items: center;
-    background-image: url("../backgroundPics/profil.jpeg");
+    background-image: url("../backgroundPics/profil2.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -42,13 +42,13 @@ main {
 	transition: all 1s ease;
 }
 .user {
-	height: 70vh;
+	height: 60vh;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
 	color: black;
 	align-items: center;
-	box-shadow: 0px 10px 10px black;
+	box-shadow: 0px 5px 17px white;
 	background-color: rgb(142,10,36);
 	position: absolute;
 	width: 100%;
@@ -63,7 +63,7 @@ main {
 #avatarSide {
 	height: 40vh;
 	justify-content: flex-start;
-	margin-top: -40px;
+	margin-top: -10vh;
 	gap: 10px;
 	font-size: 15px;
 	font-weight: bold;
@@ -91,7 +91,7 @@ main {
 	background: aliceblue;
 	width: 80vw;
 	border: 1px solid black;
-	min-height: 15vh;
+	min-height: 10vh;
 	overflow: scroll;
 	display: flex;
 	justify-content: center;
@@ -176,6 +176,7 @@ input{
 		height: 10vh;
 	}
 	.user{
+		height: 70vh;
 		flex-direction: row;
 		width: 90vw;
 		justify-content: space-evenly;
@@ -189,6 +190,6 @@ input{
 	}
 	#description{
 		width: 38vw;
-		min-height: 20vh;
+		min-height: 25vh;
 	}
 }

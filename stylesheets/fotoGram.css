@@ -38,7 +38,7 @@ main {
 }
 #fotoPlace {
 	display: flex;
-	gap: 3vw;
+	gap: 1vw;
 	position: relative;
 	overflow-x: scroll;
 }
