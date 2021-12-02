@@ -61,12 +61,12 @@ main {
 	position: relative;
 }
 #avatarSide {
-	height: 40vh;
 	justify-content: flex-start;
 	margin-top: -10vh;
 	gap: 10px;
 	font-size: 15px;
 	font-weight: bold;
+	margin-bottom: 2vh;
 }
 #usersAvatar {
 	border-radius: 40px;
@@ -184,6 +184,10 @@ input{
 	#avatarSide{
 		margin-top: unset;
 		width: 35%;
+		margin-bottom: unset;
+	}
+	#usersAvatar{
+		height: 45vh;
 	}
 	#textSide{
 		max-width: 40vw;
