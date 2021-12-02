@@ -165,7 +165,7 @@ main {
 	.userFavorites {
 		display: flex;
 		flex-direction: row;
-		gap: 3vh;
+		gap: 20px;
 		overflow: scroll;
 		height: 100%;
 		width: 96vw;
