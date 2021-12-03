@@ -11,6 +11,12 @@
         });
     })
 
+    if(document.querySelector(".addedComment")){
+        setTimeout(()=>{
+            document.querySelector(".addedComment").classList.add("hide");
+        },1000);
+    }
+
     let allAddComments = document.querySelectorAll(".addComment");
 
     allAddComments.forEach(addComment => {
@@ -36,7 +42,6 @@
                     window.location.href = "phpfiles/comments.php?picId="+clickedImgID+"&newComment="+newComment+"&comingFrom="+profilOwnerID;
 
                     ekleInput.value = "";
-
                 }
             });
         });
@@ -81,7 +86,6 @@
                         if(e.id !== chosenID){
                             // e.classList.toggle("opacity");
                             e.classList.toggle("hide");
-        
                         }
                     });
 
@@ -92,7 +96,7 @@
                     e.target.parentElement.parentElement.nextElementSibling.classList.toggle("hide");
     
                     //To keep scroll on the clicked imgBox
-                    imgBox.scrollIntoView();
+                    imgBox.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
                 });
             });
         

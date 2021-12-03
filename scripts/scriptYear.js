@@ -85,7 +85,7 @@ function createPics(picture){
             e.target.parentElement.parentElement.classList.toggle("big");
 
             //To keep scroll on the clicked imgBox
-            imgBox.scrollIntoView();
+            imgBox.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
         });
         
     })

@@ -65,7 +65,7 @@ if(isset($_GET["id"])){
                 }
             }
         ?>
-    <div id="containerFav" style="display: flex; justify-content: center; align-items:center; font-family:'Kaushan Script', cursive;">
+    <div id="containerFav" style="display: flex; justify-content: center; align-items:center;">
         <div class="userFavorites">
             <?php 
 

@@ -156,8 +156,7 @@ div.bigger {
 	justify-content: center;
 	align-items: flex-start;
 	display: flex;
-	height: auto;
-	width: auto;
+	height: 40vh;
 
     transition: all 1s ease;
 }
@@ -191,16 +190,17 @@ div.bigger {
 .commentText{
 	max-width: 85vw;
 	overflow: scroll;
+	font-size: 25px;
+	font-family:'Kaushan Script', cursive;
 }
 .commentField {
 	min-height: 7vh;
 	color: black;
 	overflow: scroll;
-	width: 100vw;
-	height: 20vh;
+	width: 42vh;
+	height: 25vh;
 	margin-top: -25px;
 	position: relative;
-	font-family: 'Kaushan Script', cursive;
 }
 .newComment {
 	display: flex;
