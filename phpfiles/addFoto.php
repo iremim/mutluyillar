@@ -56,7 +56,8 @@ if($method == "POST" && !empty($_FILES["img"]) && !empty($_FILES["imgFlip"]) && 
             "name"=> $imgName,
             "imgFlipUrl"=> "upload/$uniqueFilename"."Flip.$ext",
             "nameFlip" => $imgName."Flip",
-            "favorite" => false
+            "favorite" => false,
+            "comments"=> [],
         ];
 
       array_push($fotos, $newFoto);

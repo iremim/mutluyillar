@@ -53,7 +53,7 @@ if(isset($_GET["id"])){
             foreach($users as $user){
                 if($user["id"] == $userId){
                     echo "
-                        <div class='user aktif'>
+                        <div id='".$user["id"]."' class='user aktif'>
                             <img id='usersAvatar' src='".$user["avatar"]."'>
                             <div id='profilText'>
                                 <p>".$user["username"]."</p>
@@ -65,10 +65,19 @@ if(isset($_GET["id"])){
                 }
             }
         ?>
-    <div id="containerFav">
+    <div id="containerFav" style="display: flex; justify-content: center; align-items:center; font-family:'Kaushan Script', cursive;">
         <div class="userFavorites">
             <?php 
+
+                if(isset($_GET["comment"])){
+                    echo "<div class='addedComment'>Yorumun '".$_GET["comment"]."' eklendi!</div>";
+                }
+                if(isset($_GET["deleted"])){
+                    echo "<div class='addedComment'>Yorumun kaldirildi!</div>";
+                }
+              
                 foreach($usersFavoriter as $pic){
+                    $picID = $pic["id"];
                     echo "
                         <div class='mainBox' id=".$pic["id"].">
                             <div class="."imgBox".">
@@ -77,6 +86,32 @@ if(isset($_GET["id"])){
                                 <img class='imgFlip hide' src='".$pic["imgFlipUrl"]."'>
                             </div>
                             <p class='underText'>".$pic["name"]."</p>
+                        </div>
+                        <div class='commentField hide'>";
+
+                        $fotoComments = $pic["comments"];
+                        foreach($fotoComments as $comment){
+                            echo "
+                                <div class='comments'>
+                                    <div id='".$comment["commentId"]."' class='commentText'> ".$comment["comment"]." </div>";
+
+                                    if($comment["ownerId"] == $_SESSION["inLoggedUser"]["id"] || $pic["ownerID"] == $_SESSION["inLoggedUser"]["id"]){
+                                        echo "
+                                            <a href='phpfiles/comments.php?picId=".$picID."&delete=".$comment["commentId"]."&comingFrom=".$pic["ownerID"]."' class='deleteComment'>X</a>
+                                        ";
+                                    }
+                                    
+                                    
+                            echo "
+                                </div>
+                            ";
+                        }
+                        
+                    echo "<div class='newComment hide'>
+                                <input type='text' name='newComment' placeholder='Yeni yorum..'>
+                                <button>Ekle</button>
+                            </div>
+                            <div class='addComment'>Yorum ekle</div>
                         </div>
                     ";
                 }
