@@ -91,20 +91,26 @@ if(isset($_GET["id"])){
 
                         $fotoComments = $pic["comments"];
                         foreach($fotoComments as $comment){
-                            echo "
-                                <div class='comments'>
-                                    <div id='".$comment["commentId"]."' class='commentText'> ".$comment["comment"]." </div>";
 
-                                    if($comment["ownerId"] == $_SESSION["inLoggedUser"]["id"] || $pic["ownerID"] == $_SESSION["inLoggedUser"]["id"]){
-                                        echo "
-                                            <a href='phpfiles/comments.php?picId=".$picID."&delete=".$comment["commentId"]."&comingFrom=".$pic["ownerID"]."' class='deleteComment'>X</a>
-                                        ";
-                                    }
-                                    
-                                    
-                            echo "
-                                </div>
-                            ";
+                            foreach($users as $user){
+                                if($user["id"] == $comment["ownerId"]){
+
+                                    echo "
+                                        <div class='comments'>
+                                            <img src='".$user["avatar"]."'>
+                                            <div id='".$comment["commentId"]."' class='commentText'> ".$comment["comment"]." </div>";
+    
+                                            if($comment["ownerId"] == $_SESSION["inLoggedUser"]["id"] || $pic["ownerID"] == $_SESSION["inLoggedUser"]["id"]){
+                                                echo "
+                                                    <a href='phpfiles/comments.php?picId=".$picID."&delete=".$comment["commentId"]."&comingFrom=".$pic["ownerID"]."' class='deleteComment'>X</a>
+                                                ";
+                                            }
+                                            
+                                    echo "
+                                        </div>
+                                    ";
+                                }
+                            }
                         }
                         
                     echo "<div class='newComment hide'>

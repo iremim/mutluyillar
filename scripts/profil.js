@@ -51,7 +51,7 @@
     
         imgBoxes.forEach(imgBox => {
             imgBox.addEventListener("click", (event)=>{
-        
+                
                 let chosenID = event.target.parentElement.parentElement.id;
         
                 let chosenParentsImgBox = event.target.parentElement;

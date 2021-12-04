@@ -106,13 +106,14 @@ main {
     flex-direction: column;
 	margin-right: 0px;
 	opacity: 100%;
+	transition: all 1s ease;
 }
 .imgBox {
 	position: relative;
-	width: 42vh;
+	width: 44vh;
 	overflow: hidden;
 	border: 1px solid rgb(142,10,36);
-	height: 42vh;
+	height: 50vh;
 	box-shadow: 0px 3px 12px rgb(142,10,36);
 	margin-bottom: 0.5vh;
 }
@@ -127,7 +128,7 @@ main {
 .underText {
 	color: white;
 	font-family: 'Kaushan Script', cursive;
-	margin-top: 0;
+	margin: 0;
 }
 .changeButton {
     position: absolute;
@@ -147,7 +148,7 @@ main {
 }
 div.big{
     height: 100%;
-    font-size: 25px;
+    font-size: 30px;
     transition: all 1s ease;
     z-index: 1;
 }
@@ -156,7 +157,7 @@ div.bigger {
 	justify-content: center;
 	align-items: flex-start;
 	display: flex;
-	height: 40vh;
+	height: 50vh;
 
     transition: all 1s ease;
 }
@@ -178,28 +179,32 @@ div.bigger {
 	padding: 10px;
 	background: aliceblue;
 	border: 1px solid black;
-	overflow: scroll;
 	margin-bottom: 7px;
 	box-shadow: 0px 2px 5px black;
 	display: flex;
-	align-items: center;
-	height: 5vh;
+	height: auto;
 	position: relative;
 	justify-content: space-between;
+	overflow: hidden;
 }
-.commentText{
-	max-width: 85vw;
+.comments > img {
+	width: 10vh;
+	border: 1px solid black;
+	border-radius: 100%;
+	height: 10vh;
+}
+.commentText {
+	max-width: 55vw;
 	overflow: scroll;
 	font-size: 25px;
-	font-family:'Kaushan Script', cursive;
+	font-family: 'Kaushan Script', cursive;
 }
 .commentField {
 	min-height: 7vh;
 	color: black;
 	overflow: scroll;
-	width: 42vh;
+	width: 44vh;
 	height: 25vh;
-	margin-top: -25px;
 	position: relative;
 }
 .newComment {
@@ -218,6 +223,13 @@ div.newComment > input {
 	height: 3vh;
 	background-color: aliceblue;
 }
+/* div.newComment > input {
+	width: 80%;
+	border: none;
+	height: 5vh;
+	background-color: aliceblue;
+	font-size: 15px;
+} */
 div.newComment > button {
 	border: none;
 	height: 3vh;
