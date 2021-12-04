@@ -284,15 +284,17 @@ div.newComment > button {
 	.longerTitle{
 		height: 13vh;
 	}
+	main{
+		margin-top: 10vh;
+	}
 	.user {
 		height: 45vh;
 		position: relative;
-		top: 5vh;
 	}
 	.favText {
 		position: relative;
-		top: 6vh;
-		margin-bottom: 8vh;
+		top: 1vh;
+		margin-bottom: 3vh;
 	}
 	.userFavorites {
 		display: flex;
@@ -306,7 +308,6 @@ div.newComment > button {
 	.rotated {
 		display: flex;
 		position: relative;
-		margin-top: 3vh;
 		width: 100%;
 		align-items: center;
 	}
