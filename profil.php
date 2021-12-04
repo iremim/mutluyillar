@@ -65,15 +65,15 @@ if(isset($_GET["id"])){
                 }
             }
         ?>
-    <div id="containerFav" style="display: flex; justify-content: center;">
+    <div id="containerFav" style="display: flex; justify-content: center; margin:auto;">
         <div class="userFavorites">
             <?php 
 
                 if(isset($_GET["comment"])){
-                    echo "<div class='addedComment'>Yorumun '".$_GET["comment"]."' eklendi!</div>";
+                    echo "<div class='addedComment'>Yorumun <span style='color:green;'>'".$_GET["comment"]."'</span> eklendi!</div>";
                 }
                 if(isset($_GET["deleted"])){
-                    echo "<div class='addedComment'>Yorumun kaldirildi!</div>";
+                    echo "<div class='addedComment'><span style='color:red;'>Yorumun kaldirildi!</span></div>";
                 }
               
                 foreach($usersFavoriter as $pic){
@@ -97,7 +97,7 @@ if(isset($_GET["id"])){
 
                                     echo "
                                         <div class='comments'>
-                                            <img src='".$user["avatar"]."'>
+                                            <a href=profil.php?id=".$user["id"]."> <img src='".$user["avatar"]."'></a>
                                             <div id='".$comment["commentId"]."' class='commentText'> ".$comment["comment"]." </div>";
     
                                             if($comment["ownerId"] == $_SESSION["inLoggedUser"]["id"] || $pic["ownerID"] == $_SESSION["inLoggedUser"]["id"]){
@@ -130,13 +130,6 @@ if(isset($_GET["id"])){
         $inLoggedUserID = $_SESSION["inLoggedUser"]["id"];
         require_once "phpfiles/footer.php"; 
     ?>
-    <style>
-        @media only screen and (max-height: 400px) {
-        footer>a{
-	    color: black;
-        }
-    }
-    </style>
     <script src="scripts/profil.js"></script>
 </body>
 </html>

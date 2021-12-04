@@ -61,7 +61,7 @@ main {
 #usersAvatar {
 	border-radius: 40px;
 	border: 1px solid black;
-	height: 100%;
+	height: 95%;
     min-width: 22.5%;
 }
 .aktif {
@@ -75,14 +75,14 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	overflow: scroll;
-	width: 44%;
+	width: 48%;
 }
 #profilText > p{
 	margin: 0;
 }
 
 #profilText > p:first-child{
-	font-size: 75px;
+	font-size: 65px;
 }
 
 #profilText > p:last-child{
@@ -133,6 +133,7 @@ main {
 	color: white;
 	font-family: 'Kaushan Script', cursive;
 	margin: 0;
+	position: relative;
 }
 .changeButton {
     position: absolute;
@@ -189,17 +190,19 @@ div.bigger {
 	position: relative;
 	justify-content: space-between;
 	overflow: hidden;
+	align-items: center;
 }
-.comments > img {
-	width: 10vh;
+.comments > a>img {
+	width: 5vh;
 	border: 1px solid black;
 	border-radius: 100%;
-	height: 10vh;
+	height: 5vh;
 }
 .commentText {
-	max-width: 55vw;
+	max-width: 65vw;
 	overflow: scroll;
-	font-size: 25px;
+	font-size: 20px;
+	width: 65vw;
 }
 .commentField {
 	min-height: 7vh;
@@ -270,20 +273,23 @@ div.newComment > button {
 }
 .smallest{
 	height: 0;
+	z-index: -1;
 }
 
 @media only screen and (max-height: 400px) {
 
-	#titleBox{
+	.titleBox{
 		height: 10vh;
-		z-index: 101;
+	}
+	.longerTitle{
+		height: 13vh;
 	}
 	.user {
 		height: 45vh;
 		position: relative;
 		top: 5vh;
 	}
-	#favText {
+	.favText {
 		position: relative;
 		top: 6vh;
 		margin-bottom: 8vh;
@@ -297,6 +303,25 @@ div.newComment > button {
 		width: 96vw;
 		margin: auto;
 	}
+	.rotated {
+		display: flex;
+		position: relative;
+		margin-top: 3vh;
+		width: 100%;
+		align-items: center;
+	}
+	.mainBox.big{
+		flex-direction: column;
+	}
+	div.bigger {
+		overflow: scroll;
+		justify-content: center;
+		align-items: start;
+		display: flex;
+		transition: all 1s ease;
+		width: 90vh;
+		height: 80vh;
+	}
 	#profilText > p:first-child {
 		font-size: 70px;
 	}
@@ -308,5 +333,53 @@ div.newComment > button {
 	}
 	.imgBox{
 		box-shadow: 0px 2px 5px rgb(142,10,36);
+	}
+	.smallest{
+		height: 0;
+	}
+	.commentFieldRotated {
+		position: relative;
+		justify-content: flex-start;
+		display: flex;
+		flex-direction: column;
+		width: 44vw;
+		max-height: 75vh;
+		z-index: 100;
+	}
+	.comments{
+		overflow: unset;
+	}
+	.comments > a > img {
+		width: 10vh;
+		height: 10vh;
+	}
+	.commentText {
+		max-width: 30vw;
+		overflow: scroll;
+		font-size: 20px;
+		width: 30vw;
+	}
+	.addComment {
+		min-height: 10vh;
+	}
+	.newComment {
+		min-height: 10vh;
+		padding: 5px;
+	}
+	div.newComment > button {
+		height: 10vh;
+		width: 6vw;
+	}
+	div.newComment > input {
+		height: 6vh;
+	}
+	.underText{
+		position: absolute;
+		bottom: 2vh;
+	}
+	.addedComment {
+		position: absolute;
+		z-index: 10;
+		width: 94vw;
 	}
 }

@@ -55,6 +55,8 @@
                 document.querySelector(".user").classList.add("smallest");
                 document.querySelector(".favText").classList.add("hide");
                 document.querySelector(".titleBox").classList.add("longerTitle");
+                document.querySelector(".userFavorites").classList.add("rotated");
+                
 
                 let chosenID = event.target.parentElement.parentElement.id;
         
@@ -66,6 +68,7 @@
 
                 let commentFieldOfChosenImgBox = chosenParentsMainBox.nextElementSibling;
 
+                commentFieldOfChosenImgBox.classList.add("commentFieldRotated");
 
                 chosenParentsMainBox.classList.add("big");
                 chosenParentsImgBox.classList.add("bigger");
@@ -102,6 +105,9 @@
                     document.querySelector(".user").classList.toggle("smallest");
                     document.querySelector(".favText").classList.toggle("hide");
                     document.querySelector(".titleBox").classList.toggle("longerTitle");
+                    document.querySelector(".userFavorites").classList.toggle("rotated");
+
+                    commentFieldOfChosenImgBox.classList.toggle("commentFieldRotated");
 
                     //To keep scroll on the clicked imgBox
                     imgBox.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
