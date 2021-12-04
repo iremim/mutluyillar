@@ -60,12 +60,12 @@ if(isset($_GET["id"])){
                                 <p>".$user["description"]."</p>
                             </div>
                         </div>
-                        <p id='favText'>Favoriler</p>
+                        <p class='favText'>Favoriler</p>
                     ";
                 }
             }
         ?>
-    <div id="containerFav" style="display: flex; justify-content: center; align-items:center;">
+    <div id="containerFav" style="display: flex; justify-content: center;">
         <div class="userFavorites">
             <?php 
 

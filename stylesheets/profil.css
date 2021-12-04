@@ -39,7 +39,7 @@ main {
 	overflow-x: hidden;
 }
 .user {
-	height: 10vh;
+	height: 22vh;
 	padding: 5px;
 	display: flex;
 	justify-content: space-around;
@@ -64,29 +64,27 @@ main {
 	font-weight: bold;
 }
 #profilText {
-	height: 10vh;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
+	overflow: scroll;
+	width: 44%;
 }
 #profilText > p{
 	margin: 0;
 }
 
 #profilText > p:first-child{
-	font-size: 40px;
+	font-size: 75px;
 }
 
 #profilText > p:last-child{
-	font-size: 20px;
+	font-size: 35px;
 	font-family: 'Tangerine', serif;
 }
 
-.userFavorites {
-	margin-top: 1vh;
-}
-#favText{
+.favText{
 	padding: 10px;
 	margin: 0;
 	background: aliceblue;
@@ -147,7 +145,6 @@ main {
     animation: w3-spin 7s infinite linear;
 }
 div.big{
-    height: 100%;
     font-size: 30px;
     transition: all 1s ease;
     z-index: 1;
@@ -157,7 +154,7 @@ div.bigger {
 	justify-content: center;
 	align-items: flex-start;
 	display: flex;
-	height: 50vh;
+	height: auto;
 
     transition: all 1s ease;
 }
@@ -197,7 +194,6 @@ div.bigger {
 	max-width: 55vw;
 	overflow: scroll;
 	font-size: 25px;
-	font-family: 'Kaushan Script', cursive;
 }
 .commentField {
 	min-height: 7vh;

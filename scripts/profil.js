@@ -52,6 +52,9 @@
         imgBoxes.forEach(imgBox => {
             imgBox.addEventListener("click", (event)=>{
                 
+                document.querySelector(".user").classList.add("hide");
+                document.querySelector(".favText").classList.add("hide");
+
                 let chosenID = event.target.parentElement.parentElement.id;
         
                 let chosenParentsImgBox = event.target.parentElement;
@@ -94,7 +97,10 @@
                     e.target.parentElement.parentElement.classList.toggle("big");
 
                     e.target.parentElement.parentElement.nextElementSibling.classList.toggle("hide");
-    
+
+                    document.querySelector(".user").classList.toggle("hide");
+                    document.querySelector(".favText").classList.toggle("hide");
+
                     //To keep scroll on the clicked imgBox
                     imgBox.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
                 });
