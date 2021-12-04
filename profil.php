@@ -43,7 +43,7 @@ if(isset($_GET["id"])){
     <title>Profil</title>
 </head>
 <body>
-    <div id="titleBox">
+    <div class="titleBox">
         <a href="index.php"><i class="fa fa-home" style="font-size:24px;color: white;"></i></a>
         <h1 style="font-family:'Kaushan Script', cursive; font-size:25px; width: 34vh;text-align: center;"><a style="text-decoration: none;color: white;">Profil</a></h1>
         <a href="logout.php"><i class="fa fa-sign-out" style="font-size:24px; color: white;"></i></a>

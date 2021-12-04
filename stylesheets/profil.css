@@ -13,7 +13,7 @@ body{
     margin: 0;
 
 }
-#titleBox {
+.titleBox {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -26,6 +26,11 @@ body{
 	margin-bottom: 5px;
 	position: absolute;
 	top: 0;
+	transition: all 1s ease;
+}
+.longerTitle{
+	height: 7vh;
+	z-index: 101;
 }
 main {
 	height: 88vh;
@@ -51,6 +56,7 @@ main {
 	position: sticky;
 	top: 0;
 	z-index: 100;
+	transition: all 1s ease;
 }
 #usersAvatar {
 	border-radius: 40px;
@@ -219,13 +225,6 @@ div.newComment > input {
 	height: 3vh;
 	background-color: aliceblue;
 }
-/* div.newComment > input {
-	width: 80%;
-	border: none;
-	height: 5vh;
-	background-color: aliceblue;
-	font-size: 15px;
-} */
 div.newComment > button {
 	border: none;
 	height: 3vh;
@@ -268,6 +267,9 @@ div.newComment > button {
 }
 .hide{
 	display: none;
+}
+.smallest{
+	height: 0;
 }
 
 @media only screen and (max-height: 400px) {
