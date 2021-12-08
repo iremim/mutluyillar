@@ -68,14 +68,7 @@ if(isset($_GET["id"])){
     <div id="containerFav" style="display: flex; justify-content: center; margin:auto;">
         <div class="userFavorites">
             <?php 
-
-                if(isset($_GET["comment"])){
-                    echo "<div class='addedComment'>Yorumun <span style='color:green;'>'".$_GET["comment"]."'</span> eklendi!</div>";
-                }
-                if(isset($_GET["deleted"])){
-                    echo "<div class='addedComment'><span style='color:red;'>Yorumun kaldirildi!</span></div>";
-                }
-              
+       
                 foreach($usersFavoriter as $pic){
                     $picID = $pic["id"];
                     echo "
@@ -102,7 +95,7 @@ if(isset($_GET["id"])){
     
                                             if($comment["ownerId"] == $_SESSION["inLoggedUser"]["id"] || $pic["ownerID"] == $_SESSION["inLoggedUser"]["id"]){
                                                 echo "
-                                                    <a href='phpfiles/comments.php?picId=".$picID."&delete=".$comment["commentId"]."&comingFrom=".$pic["ownerID"]."' class='deleteComment'>X</a>
+                                                    <a value='".$comment["ownerId"]."' class='deleteComment'>X</a>
                                                 ";
                                             }
                                             
@@ -113,11 +106,11 @@ if(isset($_GET["id"])){
                             }
                         }
                         
-                    echo "<div class='newComment hide'>
-                                <input type='text' name='newComment' placeholder='Yeni yorum..'>
-                                <button>Ekle</button>
-                            </div>
-                            <div class='addComment'>Yorum ekle</div>
+                    echo "
+                        <div id='".$_SESSION["inLoggedUser"]["id"]."' class='commentInputs'>
+                           <div id='newCommentPlace'>
+                           </div>
+                        </div>    
                         </div>
                     ";
                 }
@@ -133,3 +126,5 @@ if(isset($_GET["id"])){
     <script src="scripts/profil.js"></script>
 </body>
 </html>
+
+                            <!-- href='phpfiles/comments.php?picId=".$picID."&delete=".$comment["commentId"]."&comingFrom=".$pic["ownerID"]."' -->

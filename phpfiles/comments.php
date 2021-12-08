@@ -1,78 +1,78 @@
 <?php
-session_start();
+// session_start();
 
-if(!isset($_SESSION["isLoggedIn"])){
-    header("Location: login.php");
-    exit();
-}
+// if(!isset($_SESSION["isLoggedIn"])){
+//     header("Location: login.php");
+//     exit();
+// }
 
-$inLoggedUserId = $_SESSION["inLoggedUser"]["id"];
+// $inLoggedUserId = $_SESSION["inLoggedUser"]["id"];
 
-require_once "functions.php";
+// require_once "functions.php";
 
-$fotos = loadJson("addedFotos.json");
+// $fotos = loadJson("addedFotos.json");
 
 
-if(isset($_GET["picId"])){
-    $picId = $_GET["picId"];
+// if(isset($_GET["picId"])){
+//     $picId = $_GET["picId"];
 
-    if(isset($_GET["newComment"])){
-        $comment = $_GET["newComment"];
+//     if(isset($_GET["newComment"])){
+//         $comment = $_GET["newComment"];
    
-        $time = (string) time();
+//         $time = (string) time();
     
-        $highestCommentID = sha1("$time$comment");
+//         $highestCommentID = sha1("$time$comment");
     
-        $newComment = [
-            "ownerId" => $inLoggedUserId,
-            "commentId" => $highestCommentID,
-            "comment" => $comment
-        ];
+//         $newComment = [
+//             "ownerId" => $inLoggedUserId,
+//             "commentId" => $highestCommentID,
+//             "comment" => $comment
+//         ];
     
-        foreach($fotos as $index => $foto){
-            if($foto["id"] == $picId){
+//         foreach($fotos as $index => $foto){
+//             if($foto["id"] == $picId){
 
-                array_push($foto["comments"], $newComment);
-                $fotos[$index] = $foto;
-            }
-        }
+//                 array_push($foto["comments"], $newComment);
+//                 $fotos[$index] = $foto;
+//             }
+//         }
     
-        saveJson("addedFotos.json", $fotos);
+//         saveJson("addedFotos.json", $fotos);
     
-        $comingFrom = $_GET["comingFrom"];
+//         $comingFrom = $_GET["comingFrom"];
 
-        header("Location: ../profil.php?id=$comingFrom&comment=$comment");
-        exit();
-    }
+//         header("Location: ../profil.php?id=$comingFrom&comment=$comment");
+//         exit();
+//     }
 
-    if(isset($_GET["delete"])){
-        $commentId = $_GET["delete"];
+//     if(isset($_GET["delete"])){
+//         $commentId = $_GET["delete"];
 
-        foreach($fotos as $ind => $foto){
-            if($foto["id"] == $picId){
+//         foreach($fotos as $ind => $foto){
+//             if($foto["id"] == $picId){
             
-                $comments = $foto["comments"];
+//                 $comments = $foto["comments"];
 
-                foreach($comments as $index => $comment){
-                    if($comment["commentId"] == $commentId){   
+//                 foreach($comments as $index => $comment){
+//                     if($comment["commentId"] == $commentId){   
 
-                        if($comment["ownerId"] == $inLoggedUserId || $foto["ownerID"] == $inLoggedUserId){
-                            array_splice($comments, $index, 1);
-                            $foto["comments"] = $comments;   
-                        }
-                    }
-                }
-                $fotos[$ind] = $foto;
-            }
-        }
+//                         if($comment["ownerId"] == $inLoggedUserId || $foto["ownerID"] == $inLoggedUserId){
+//                             array_splice($comments, $index, 1);
+//                             $foto["comments"] = $comments;   
+//                         }
+//                     }
+//                 }
+//                 $fotos[$ind] = $foto;
+//             }
+//         }
         
-        saveJson("addedFotos.json",$fotos);
+//         saveJson("addedFotos.json",$fotos);
 
-        $comingFrom = $_GET["comingFrom"];
-        header("Location: ../profil.php?id=$comingFrom&deleted=true");
-        exit();
-    }
+//         $comingFrom = $_GET["comingFrom"];
+//         header("Location: ../profil.php?id=$comingFrom&deleted=true");
+//         exit();
+//     }
    
-}
+// }
 
 ?>

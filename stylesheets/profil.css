@@ -258,16 +258,6 @@ div.newComment > button {
 	box-shadow: 0px 2px 5px black;
 	height: 7vh;
 }
-.addedComment{
-	text-align: center;
-	padding: 7px;
-	background: aliceblue;
-	border: 1px solid black;
-	overflow: scroll;
-	margin-bottom: 10px;
-	box-shadow: 0px 2px 5px black;
-	max-width: 96vw;
-}
 .hide{
 	display: none;
 }

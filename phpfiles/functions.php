@@ -11,6 +11,15 @@ function saveJson($filename, $data){
     return true;
 };
 
+// Skickar ut JSON till användaren
+function sendJson($data, $statuscode = 200){
+    header("Content-Type: application/json");
+    http_response_code($statuscode);
+    $json = json_encode($data);
+    echo $json;
+    die();
+}
+
 function getAlbumsPicture($album, $albums, $addedFotos){
 
     $picturesOfChosenAlbum = [];
