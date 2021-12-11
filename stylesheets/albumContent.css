@@ -37,7 +37,6 @@ main{
 }
 #fotoPlace {
 	display: flex;
-	gap: 20px;
 	position: relative;
     overflow-x: scroll;
 
@@ -53,6 +52,7 @@ main{
 	height: auto;
 	font-size: auto;
 	left: 0;
+    margin-right: 15px;
 }
 .imgBox {
 	position: relative;
@@ -238,6 +238,7 @@ div.bigger {
         flex-direction: column;
         height: auto;
         font-size: auto;
+        margin-right: 0px;
     }
     .imgBox {
         position: relative;

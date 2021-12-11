@@ -38,7 +38,6 @@ main {
 }
 #fotoPlace {
 	display: flex;
-	gap: 20px;
 	position: relative;
 	overflow-x: scroll;
 }
@@ -54,6 +53,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	text-align: right;
+    margin-right: 20px;
 }
 .albumBox > a:last-child {
 	text-decoration: none;
@@ -144,6 +144,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 0px;
     }
     #deleteAlbumButton {
         text-decoration: none;
