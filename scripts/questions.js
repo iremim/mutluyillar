@@ -155,7 +155,7 @@ const sorus = [
     },
     {
         id:15,
-        question: "Uyku mu tatli?, Bu pamuk mu?",
+        question: "Uyku mu tatli? Bu pamuk mu?",
         img:"https://hediyapp.herokuapp.com/qPics/pamuk.jpg",
         answers: [
             {value: 6, option: "Sen"},

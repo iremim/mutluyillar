@@ -46,8 +46,7 @@ $userId = $inloggedUser["id"];
                         
                             <p>Simdi seninle birlikte bi oyun oynayacagiz. 
                                 Bu oyunu eger 75% basari oraniyla bitirebilirsen 
-                                istedigin herhangi bi seyi kayitsiz sartsiz yerine 
-                                getirecegim! Ne dilersen ...<i class="fas fa-kiss-wink-heart" style="font-size:20px; color:white;"></i></p>
+                                dile benden ne dilersen ...<i class="fas fa-kiss-wink-heart" style="font-size:20px; color:white;"></i></p>
                                 <p>Oyun toplamda 10 sorudan olusmakta ve her soru da sadece tek bir cevap 10 poan degerinde!</p>
                                 
                                 <p style="text-align: center;"><span style="font-size:20px;">&#8595;</span> Baslamak icin <span style="font-size:20px;">&#8595;</span></p>
