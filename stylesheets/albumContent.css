@@ -129,6 +129,7 @@ div.big{
     font-size: 25px;
     transition: all 1s ease;
     z-index: 1;
+    margin-right: 0px;
 }
 div.bigger {
     height: 90vh;
